@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="MissingTranslation" severity="warning" />
+    <issue id="ProtectedPermissions">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="TypographyDashes">
+        <ignore path="res/values/analytics.xml" />
+    </issue>
+    <issue id="UnusedNamespace">
+        <ignore path="res/layout/fragment_all_agents.xml" />
+        <ignore path="res/layout/fragment_my_agents.xml" />
+        <ignore path="res/layout/fragment_my_feed.xml" />
+    </issue>
+    <issue id="UnusedResources" severity="error" />
+</lint>

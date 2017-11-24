@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/onboarding_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="64dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@color/onboarding_footer_background">
+
+            <TextView
+                android:id="@+id/button_left"
+                style="@style/OnboardingBaseButton"
+                android:text="@string/skip" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.2" />
+
+            <TextView
+                android:id="@+id/button_right"
+                style="@style/OnboardingSolidButton"
+                android:text="@string/yes_im_in" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/help_container"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:padding="48dp"
+        android:background="#88000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/card"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/help_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                android:id="@+id/help_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="16dp"
+                style="@style/OnboardingText"
+                android:layout_marginRight="2dp" />
+
+            <View
+                style="@style/OnboardingSpacer"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:id="@+id/help_ok"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="16sp"
+                android:textColor="@color/onboarding_title"
+                android:text="@string/ok_got_it"
+                android:textStyle="bold"
+                android:background="@drawable/onboarding_transparent_clickable" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/finished_container"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:padding="48dp"
+        android:background="#88000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/card"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/finished_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/success_green_check"/>
+
+            <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                style="@style/OnboardingText"
+                android:text="@string/setup_successful"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

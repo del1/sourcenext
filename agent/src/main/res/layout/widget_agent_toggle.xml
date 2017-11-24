@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:layout_height="96dp"
+    android:layout_width="64dp"
+    android:layout_margin="8dp"
+    android:background="@color/widget_bg">
+    
+    <ImageView
+        android:id="@+id/app_icon"
+        android:src="@drawable/ic_widget_battery_active"
+        android:layout_height="56dp"
+        android:layout_width="56dp"
+        android:layout_marginLeft="4dp" 
+        android:layout_marginTop="4dp" 
+        android:layout_marginRight="4dp" />
+    
+    
+	<LinearLayout android:id="@+id/widget_status_bar"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:paddingTop="4dp" android:paddingBottom="4dp">
+    
+	<TextView
+		android:id="@+id/widget_status"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:singleLine="true"
+		android:textSize="12sp"
+		android:text="ENABLED" />    
+		
+</LinearLayout>
+
+</LinearLayout>

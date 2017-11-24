@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sunday"
+            style="@style/TimeNotSelected"
+            android:text="@string/day_sunday"
+            android:layout_margin="1dp" />
+
+        <TextView
+            android:id="@+id/monday"
+            style="@style/TimeNotSelected"
+            android:text="@string/day_monday"
+            android:layout_margin="1dp"/>
+
+        <TextView
+            android:id="@+id/tuesday"
+            style="@style/TimeNotSelected"
+            android:text="@string/day_tuesday"
+            android:layout_margin="1dp" />
+
+        <TextView
+            android:id="@+id/wednesday"
+            style="@style/TimeNotSelected"
+            android:text="@string/day_wednesday"
+            android:layout_margin="1dp" />
+
+        <TextView
+            android:id="@+id/thursday"
+            style="@style/TimeNotSelected"
+            android:text="@string/day_thursday"
+            android:layout_margin="1dp" />
+
+        <TextView
+            android:id="@+id/friday"
+            style="@style/TimeNotSelected"
+            android:text="@string/day_friday"
+            android:layout_margin="1dp" />
+
+        <TextView
+            android:id="@+id/saturday"
+            style="@style/TimeNotSelected"
+            android:text="@string/day_saturday" 
+            android:layout_margin="1dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

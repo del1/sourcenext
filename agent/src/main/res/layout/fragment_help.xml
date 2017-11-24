@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ccc">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/agent_background_card"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/help_header_intro"
+                    android:textColor="@color/Blue"
+                    android:textSize="@dimen/AgentSectionTitle" />
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:padding="8dp"
+                    android:text="@string/help_header_text" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/agent_background_card"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/help_battery_intro"
+                    android:textColor="@color/Blue"
+                    android:textSize="@dimen/AgentSectionTitle" />
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_battery_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/help_battery_text" />
+                
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_battery_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/help_battery_list" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/agent_background_card"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/help_parking_intro"
+                    android:textColor="@color/Blue"
+                    android:textSize="@dimen/AgentSectionTitle" />
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_parking_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:padding="8dp"
+                    android:text="@string/help_parking_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/agent_background_card"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/help_meeting_intro"
+                    android:textColor="@color/Blue"
+                    android:textSize="@dimen/AgentSectionTitle" />
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_meeting_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/help_meeting_text" />
+                
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_meeting_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/help_meeting_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/agent_background_card"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/help_drive_intro"
+                    android:textColor="@color/Blue"
+                    android:textSize="@dimen/AgentSectionTitle" />
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_drive_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/help_drive_text" />
+                
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_drive_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/help_drive_list" />
+
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/agent_background_card"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/help_sleep_intro"
+                    android:textColor="@color/Blue"
+                    android:textSize="@dimen/AgentSectionTitle" />
+
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_sleep_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/help_sleep_text" />
+                
+                <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                    android:id="@+id/help_sleep_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/help_sleep_list" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

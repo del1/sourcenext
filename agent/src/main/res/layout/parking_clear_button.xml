@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ccc"
+    android:orientation="vertical"
+    android:paddingTop="12dp" >
+
+				<TextView
+                        android:id="@+id/parking_clear_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/agent_button_default_clickable"
+                        android:clickable="true"
+                        android:padding="18dp"
+			            android:layout_marginBottom="8dp"
+			            android:layout_marginTop="8dp"
+                        android:text="@string/parking_agent_clear_button"
+                        android:textColor="@color/bg_text"
+                        android:textSize="18sp" >
+                </TextView> 
+
+</LinearLayout>

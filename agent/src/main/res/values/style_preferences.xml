@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="PreferenceContainer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="PreferenceContainerNoCheckbox">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+    </style>
+
+    <style name="PreferenceTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/TextSizeThree</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="PreferenceTitlePrimary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/TextSizeThree</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">false</item>
+    </style>
+
+    <style name="PreferenceTitleSub">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/TextSizeSmall</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <style name="PreferenceHeading">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/TextSizeOne</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@color/divider_orange</item>
+        <item name="android:textColor">@color/list_heading_font_color</item>
+    </style>
+
+    <style name="PreferenceCheckboxLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="PreferenceCheckbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="PreferenceRadioTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/TextSizeThree</item>
+        <item name="android:textColor">@color/TextColor</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="PreferenceRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/TextSizeThree</item>
+        <item name="android:textColor">@color/TextColor</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+</resources>

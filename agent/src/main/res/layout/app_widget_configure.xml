@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+        android:id="@+id/choose_agent_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:text="@string/widget_agent_choose"
+        android:background="#333"
+        android:textColor="#fff"/>
+    
+    <ListView
+        android:id="@+id/agent_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

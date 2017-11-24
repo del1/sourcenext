@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" >
+	<LinearLayout
+		android:id="@+id/outer_container" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@android:color/transparent"
+		android:orientation="vertical" android:paddingLeft="12dp"
+		android:paddingRight="12dp" android:paddingTop="12dp" >
+
+
+
+		<LinearLayout android:id="@+id/backgroundBox" android:layout_width="match_parent"
+			android:layout_height="wrap_content" style="@style/AgentListItem"
+			android:background="@drawable/agent_box_clickable" android:clickable="true"
+			android:orientation="horizontal">
+			<LinearLayout android:id="@+id/container"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="1" android:orientation="horizontal"
+				style="@style/AgentListItemMainContainer" >
+				<LinearLayout android:id="@+id/containerInner"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:orientation="horizontal" style="@style/AgentListItemMainLeft"/>
+				<ImageView android:id="@+id/icon" style="@style/AgentListItemMainIcon" />
+				<View android:id="@+id/right_divider" style="@style/DividerGrayVertical"/>
+				<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+					android:id="@+id/name" android:layout_width="0dp"
+					android:layout_height="wrap_content" android:layout_weight="1" style="@style/AgentListItemMainName"/>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/checkBoxContainer"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:orientation="vertical" style="@style/AgentListSwitchContainer">
+				<ImageView
+					android:id="@+id/checkBox"
+					style="@style/AgentListSwitch" >
+				</ImageView>
+
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/regular_status_bar"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="#ddd" android:orientation="horizontal"
+		android:layout_gravity="right" android:layout_marginTop="18dp" android:layout_marginRight="8dp">
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+			android:id="@+id/regular_status" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" style="@style/AgentListStatus" />
+	</LinearLayout>
+
+</FrameLayout>

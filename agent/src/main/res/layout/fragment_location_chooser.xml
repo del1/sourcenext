@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+        android:id="@+id/address_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:padding="12dp" />
+
+
+    <LinearLayout
+        android:id="@+id/address_edit_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <EditText
+            android:id="@+id/address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/address"
+            android:textColor="#111" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/address_results_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        </ListView>
+
+    <LinearLayout
+        android:id="@+id/address_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+
+
+    <TextView
+        android:id="@+id/chooser_continue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/agent_button_primary_clickable"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:text="@string/location_chooser_button_lookup"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/spacer_chooser_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/chooser_clear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/agent_button_error_clickable"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:text="@string/location_chooser_clear_location"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</LinearLayout>

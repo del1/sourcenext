@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ccc"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/chooser_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:choiceMode="multipleChoice"
+            android:padding="12dp"
+            android:clipToPadding="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/error"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ccc"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/wifi_chooser_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="24dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chooser_continue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/agent_button_primary_clickable"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:text="@string/bluetooth_chooser_continue"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</LinearLayout>

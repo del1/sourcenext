@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ccc"
+    android:orientation="vertical"
+    android:paddingTop="12dp" >
+
+    <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+        android:id="@+id/parkingMoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/agent_button_default_clickable"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:text="@string/parking_more"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prefAnalyticsContainer"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:background="@android:color/transparent"
+	android:paddingLeft="22dp" android:paddingRight="26dp"
+	android:orientation="vertical"
+	android:paddingTop="2dp">
+     
+     <TextView
+         android:id="@+id/title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:textSize="18sp"
+         android:layout_marginBottom="2dp" />
+     
+    <TextView
+        android:id="@+id/contactsEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:background="@drawable/item_default_clickable"
+        android:padding="8dp" >
+    </TextView>
+    
+</LinearLayout>
+

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/time_ranges_editor_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/edit_time_range"
+            android:textColor="@color/Blue"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#ccc" />
+    </LinearLayout>
+
+    <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:paddingTop="8dp" android:paddingLeft="8dp" android:paddingRight="8dp">
+        
+        <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+            android:id="@+id/start_label"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/starts_at"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/start_day"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/item_subtle_clickable"
+            android:text="@string/edit_time_ranges"
+            android:textSize="20sp" />
+
+        <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+            android:id="@+id/start_time"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/item_subtle_clickable"
+            android:clickable="true"
+            android:layout_marginLeft="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:textSize="18sp" />
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:padding="8dp">
+
+        <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+            android:id="@+id/end_label"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/ends_at"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/end_day"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_subtle_clickable"
+            android:padding="12dp"
+            android:text="@string/edit_time_ranges"
+            android:textSize="20sp" />
+
+        <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+            android:id="@+id/end_time"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_subtle_clickable"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:textSize="18sp" />
+    </TableRow>
+
+    </TableLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#ccc" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_default_clickable"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:text="@android:string/cancel"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#eee" />
+
+        <LinearLayout
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_default_clickable"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:text="@android:string/ok"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

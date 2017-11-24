@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="8dp">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:id="@+id/map_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccc"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:id="@+id/maps_pin_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/agent_box_clickable"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:src="@drawable/ic_maps" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:singleLine="true"
+                android:text="@string/open_in_maps"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ccc" />
+
+        <LinearLayout
+            android:id="@+id/maps_share_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/agent_box_clickable"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:src="@drawable/ic_android_share" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:singleLine="true"
+                android:text="@string/share_spot"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#ccc"
+        android:padding="8dp"
+        android:text="@string/parking_agent_map_guide"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

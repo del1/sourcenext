@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Agent" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:listChoiceIndicatorMultiple">@drawable/theme_btn_check_holo_light</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/theme_btn_radio_holo_light</item>
+        <item name="android:seekBarStyle">@style/Subtheme.Agent.SeekBar</item>
+        <item name="android:selectableItemBackground">@drawable/item_default_clickable</item>
+        <item name="android:buttonStyle">@style/Subtheme.Agent.Button</item>
+        <item name="android:imageButtonStyle">@style/Subtheme.Agent.ImageButton</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_light</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/theme_activated_background_holo_light</item>
+		<item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+		
+		
+		<item name="android:actionBarItemBackground">@drawable/theme_btn_transparent_background</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Agent</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Agent</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Agent</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Agent</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Agent</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_agent</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_agent</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Agent</item>
+
+                <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Agent.Widget</item>
+		
+    </style>
+
+    <style name="Theme.Agent.DarkActionBar" parent="Theme.Agent">
+    </style>
+    
+    <style name="Theme.Agent.NoActionBar" parent="Theme.Agent">
+        <item name="android:windowActionBar">false</item>
+    	<item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Agent.Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:listChoiceIndicatorMultiple">@drawable/theme_btn_check_holo_light</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/theme_btn_radio_holo_light</item>
+        <item name="android:seekBarStyle">@style/Subtheme.Agent.SeekBar</item>
+        <item name="android:buttonStyle">@style/Subtheme.Agent.Button</item>
+        <item name="android:imageButtonStyle">@style/Subtheme.Agent.ImageButton</item>
+    </style>
+    
+    <style name="ActionBar.Solid.Agent" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_agent</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_agent</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_agent</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Agent</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Agent" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_agent</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Agent</item>
+    </style>
+
+    <style name="PopupMenu.Agent" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_agent</item>	
+    </style>
+
+    <style name="DropDownListView.Agent" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/theme_btn_transparent_background</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Agent" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/theme_tab_indicator_ab_agent</item>
+    </style>
+
+    <style name="DropDownNav.Agent" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/theme_spinner_background_ab_agent</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_agent</item>
+        <item name="android:dropDownSelector">@drawable/theme_btn_transparent_background</item>
+    </style>
+    
+    <style name="ProgressBar.Agent" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_agent</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Agent" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/theme_cab_done_agent</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Agent.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Agent</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Agent</item>
+    </style>
+    
+    
+    <style name="Subtheme.Agent.ActionBar.Text" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@color/ActionBarTextColor</item>
+    </style>
+    
+    <style name="Subtheme.Agent.Button" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/theme_btn_default_holo_light</item>
+    </style>
+    
+
+    <style name="Subtheme.Agent.ImageButton" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/theme_btn_default_holo_light</item>
+    </style>
+    
+    
+    <style name="Subtheme.Agent.SeekBar" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/theme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/theme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/theme_scrubber_control_selector_holo_light</item>
+    </style>
+    
+</resources>

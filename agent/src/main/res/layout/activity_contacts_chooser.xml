@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#ccc" />
+
+    <LinearLayout
+        android:id="@+id/continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="@drawable/agent_button_primary_clickable">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:text="@string/cc_save"
+        android:clickable="false"
+        android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>

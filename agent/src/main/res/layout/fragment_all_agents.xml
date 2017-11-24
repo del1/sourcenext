@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="24dp"
+            android:text="@string/loading_agents"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/loadingProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/content_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/agentsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/agentsWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#b9b9b9" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agentsEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp" >
+
+                <!-- <View
+                     android:layout_width="fill_parent"
+                     android:layout_height="1dp"
+                     android:layout_marginBottom="12dp"
+                     android:background="#b9b9b9" />
+
+                 <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                     android:id="@+id/moreHeader"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/agent_button_default_clickable"
+                     android:clickable="true"
+                     android:onClick="ideaClicked"
+                     android:paddingBottom="8dp"
+                     android:paddingLeft="12dp"
+                     android:paddingRight="12dp"
+                     android:paddingTop="8dp"
+                     android:text="@string/idea"
+                     android:textSize="20sp"
+                     android:textStyle="italic" />rohan commented-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

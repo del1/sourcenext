@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- NOTIFICATIONS SECTION -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="12dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/settings_notifications"
+            android:textColor="#555"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/prefNotificationText"
+                style="@style/PreferenceRadioTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/layoutPreferencesNotifications" />
+
+            <RadioGroup
+                android:id="@+id/notifications_group"
+                style="@style/PreferenceRadio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/notifications_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/layoutPreferencesNotificationsOne" />
+
+                <RadioButton
+                    android:id="@+id/notifications_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/layoutPreferencesNotificationsNone" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/prefSoundOnAgentStart"
+                style="@style/PreferencesSwitch"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/layoutPreferencesSoundOnAgentStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/prefPushNotification"
+                style="@style/PreferencesSwitch"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/pushNotificaitonSetting" />
+        </LinearLayout>
+
+        <!-- DEBUGGING SECTION -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="12dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="16dp"
+            android:text="@string/settings_debugging"
+            android:textColor="#555"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <Switch
+                android:id="@+id/prefAnalytics"
+                style="@style/PreferencesSwitch"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/layoutPreferencesUsage" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/prefDebugViewContainer"
+                style="@style/PreferenceContainerNoCheckbox"
+                android:background="@drawable/item_default_clickable"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/prefDebugViewText"
+                    style="@style/PreferenceTitle"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/layoutPreferencesDebugView" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/prefDebugClearContainer"
+                style="@style/PreferenceContainerNoCheckbox"
+                android:background="@drawable/item_default_clickable"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/prefDebugClearText"
+                    style="@style/PreferenceTitle"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/layoutPreferencesDebugClear" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/prefZipDebugFile"
+                style="@style/PreferencesSwitch"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/layoutPreferencesZipDebugFile" />
+
+        </LinearLayout>
+
+        <!-- OTHER SECTION -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="12dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="16dp"
+            android:text="@string/settings_other"
+            android:textColor="#555"
+            android:textSize="22sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/prefPreserveSettingsOnAgentUninstall"
+                style="@style/PreferencesSwitch"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/layoutPreferencesPreserveSettingsOnAgentUninstall" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/showWelcomeButton"
+                style="@style/PreferenceContainerNoCheckbox"
+                android:background="@drawable/item_default_clickable"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/prefshowWelcomeText"
+                    style="@style/PreferenceTitle"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/show_welcome" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/showIssuesButton"
+                style="@style/PreferenceContainerNoCheckbox"
+                android:background="@drawable/item_default_clickable"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/prefshowIssuesText"
+                    style="@style/PreferenceTitle"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/show_issues" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/showAboutButton"
+                style="@style/PreferenceContainerNoCheckbox"
+                android:background="@drawable/item_default_clickable"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/prefshowAbout"
+                    style="@style/PreferenceTitle"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/show_about" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/showPrivacyPolicyButton"
+                style="@style/PreferenceContainerNoCheckbox"
+                android:background="@drawable/item_default_clickable"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/prefPrivacyPolicy"
+                    style="@style/PreferenceTitle"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/privacy_policy" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

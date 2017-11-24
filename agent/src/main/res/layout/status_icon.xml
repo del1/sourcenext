@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dp">
+
+    <FrameLayout
+        android:layout_width="24dp"
+        android:layout_height="24dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/status_circle" />
+        <ImageView
+            android:id="@+id/status_icon"
+            android:layout_margin="2dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher"></ImageView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="8dp"
+        android:text="Driving finished. (48m)"
+        android:textColor="#ccc"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

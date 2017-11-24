@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/BGColor"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/aboutIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+        android:id="@+id/aboutTextHeading"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/aboutIcon"
+        android:layout_toRightOf="@id/aboutIcon"
+        android:paddingLeft="12sp"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp" />
+</RelativeLayout>

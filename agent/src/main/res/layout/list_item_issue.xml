@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outer_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingTop="4dp" >
+
+    <LinearLayout
+        android:id="@+id/backgroundBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+		    android:background="@drawable/agent_button_error_clickable"
+		    android:clickable="true"
+                android:paddingBottom="12dp"
+	            android:paddingTop="12dp"
+	                   >
+
+            <LinearLayout
+                android:id="@+id/containerInner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                />
+
+            <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoCondensedBold
+                android:id="@+id/issue_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingRight="8dp"
+                android:paddingLeft="12dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/right_divider"
+                style="@style/DividerGrayVertical" />
+            
+            <ImageView
+                android:id="@+id/dismiss"
+                android:layout_width="56dp"
+                android:layout_height="44dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_info_white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

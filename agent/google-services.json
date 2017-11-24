@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "629599938021",
+    "firebase_url": "https://agent-softbank.firebaseio.com",
+    "project_id": "agent-softbank",
+    "storage_bucket": "agent-softbank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629599938021:android:f335213c5d4a1a06",
+        "android_client_info": {
+          "package_name": "com.mobiroo.n.sourcenextcorporation.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629599938021-qo6j1julnav8pfcrlmc6men1eg1nkbdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBWvEbaGEATHag3_hm4hO7RQp21rYYWpU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

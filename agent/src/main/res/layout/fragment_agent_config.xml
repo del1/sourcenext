@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ccc" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccc"
+            android:orientation="vertical"
+            android:padding="12dp" >
+
+            <LinearLayout
+                android:id="@+id/configuration_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/agent_background_card"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" >
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/more_more_settings_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/more_settings_button_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+ 
+                    <TextView
+                        android:id="@+id/more_settings_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/agent_button_primary_clickable"
+                        android:clickable="true"
+			            android:layout_marginTop="20dp"
+                        android:padding="8dp"
+                        android:text="@string/more_settings"
+                        android:textColor="#fff"
+                        android:textSize="18sp" >
+                    </TextView>
+                </LinearLayout>
+                
+                
+                
+                 <LinearLayout
+                android:id="@+id/advanced_configuration_items_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+                
+                 <LinearLayout
+                android:id="@+id/advanced_configuration_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/agent_background_card"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_marginTop="12dp">
+
+                </LinearLayout>
+				
+				<TextView
+                        android:id="@+id/reset_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/agent_button_error_clickable"
+                        android:clickable="true"
+                        android:padding="18dp"
+			            android:layout_marginBottom="12dp"
+			            android:layout_marginTop="12dp"
+                        android:text="@string/reset_settings"
+                        android:textColor="#fff"
+                        android:textSize="18sp" >
+                </TextView>    
+                
+
+                 </LinearLayout>
+                
+                
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add"
+        android:icon="@drawable/ic_plus_white"
+        android:showAsAction="always"
+        android:title="@string/time_range_add_new" />
+    <item android:id="@+id/edit_all"
+        android:title="@string/edit_all_time_ranges" />
+</menu>
+

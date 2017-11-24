@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BGColor"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/aboutIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+        android:id="@+id/aboutTextHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/aboutIcon"
+        android:layout_toRightOf="@id/aboutIcon"
+        android:paddingBottom="2sp"
+        android:paddingLeft="12sp"
+        android:paddingTop="2sp"
+        android:text=""
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSizeThree" />
+
+    <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/aboutIcon"
+        android:layout_below="@id/aboutIcon"
+        android:paddingBottom="5sp"
+        android:paddingLeft="2sp"
+        android:paddingTop="5sp"
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSizeOne" />
+
+</RelativeLayout>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobiroo.n.sourcenextcorporation.agent"
+    android:versionCode="69"
+    android:versionName="1.7.2" >
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />-->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- Agent permissions -->
+    <uses-permission android:name="com.mobiroo.n.sourcenextcorporation.agent.pause" />
+    <uses-permission android:name="com.mobiroo.n.sourcenextcorporation.agent.delay" />
+    <!--<uses-permission android:name="com.mobiroo.n.sourcenextcorporation.agent.permission.C2D_MESSAGE" />-->
+
+    <!--<permission-->
+        <!--android:name="com.mobiroo.n.sourcenextcorporation.agent.permission.C2D_MESSAGE"-->
+        <!--android:protectionLevel="signature" />-->
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- Google Maps permissions -->
+    <permission
+        android:name="com.mobiroo.n.sourcenextcorporation.agent.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.mobiroo.n.sourcenextcorporation.agent.permission.MAPS_RECEIVE" />
+
+    <!-- Agent specific permissions -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- End Agent specific permissions -->
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.AgentApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD_bu_BzkKe4sPl-IgEZUWZ-RQ0CcdJz2U" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.MainActivity"
+            android:theme="@style/Theme.Agent.DarkActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tryagent" />
+            </intent-filter>
+        </activity>
+
+        <!-- Agent activities -->
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.AgentConfigurationActivity"
+            android:parentActivityName="com.mobiroo.n.sourcenextcorporation.agent.activity.MainActivity"
+            android:theme="@style/Theme.Agent.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.ParkingAgentConfigurationActivity"
+            android:parentActivityName="com.mobiroo.n.sourcenextcorporation.agent.activity.MainActivity"
+            android:theme="@style/Theme.Agent.DarkActionBar" >
+        </activity>
+
+        <!-- choosers -->
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.choosers.LocationChooserActivity"
+            android:theme="@style/Theme.Agent.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.choosers.BluetoothChooserActivity"
+            android:theme="@style/Theme.Agent.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.choosers.WifiChooserActivity"
+            android:theme="@style/Theme.Agent.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.choosers.ContactsChooserActivity"
+            android:theme="@style/Theme.Agent.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.choosers.AgentTimeRangeChooserActivity"
+            android:theme="@style/Theme.Agent.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.AgentTimeRangeEditor"
+            android:theme="@style/Theme.Agent.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.SatisfactionActivity"
+            android:theme="@style/Theme.Agent.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.AlarmActivity"
+            android:label="@string/title_activity_alarm" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.widget.AgentToggleWidgetConfigureActivity"
+            android:theme="@style/Theme.Agent.Dialog" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.compat.AppIssueActivity"
+            android:theme="@style/Theme.Agent.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.SmsReplyActivity"
+            android:configChanges="screenSize|orientation"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.mobiroo.n.sourcenextcorporation.agent.service.ReadSmsService"
+            android:theme="@style/Theme.Agent.Dialog" />
+        <activity
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.activity.OnboardingActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/Theme.Agent.DarkActionBar" />
+
+        <!-- Used for install referral measurement -->
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+
+        <receiver
+            android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.BluetoothConnectionChangeReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.PhoneCallReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.SmsBroadcastReceiver" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.AlarmReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.ALARM_RECEIVER" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.BatteryReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_BATTERY_LOW" />
+                <action android:name="android.intent.action.ACTION_BATTERY_OKAY" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.AirplaneModeChangeReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.StartIntentService"
+            android:exported="true"
+            android:label="@string/start_service_name" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.start" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.FinishIntentService"
+            android:exported="true"
+            android:label="@string/finish_service_name" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.finish" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.PauseIntentService"
+            android:exported="true"
+            android:label="@string/pause_service_name" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.pause" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.DelayIntentService"
+            android:exported="true"
+            android:label="@string/delay_service_name" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.delay" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.LocationSaverService"
+            android:exported="false"
+            android:label="@string/service_name" />
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.ActivityRecognitionService"
+            android:exported="true"
+            android:label="@string/service_name" >
+        </service>
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.ReadSmsService"
+            android:label="@string/service_name" >
+        </service>
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.SoundService"
+            android:label="Sound Service" />
+
+        <receiver android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.CalendarChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED" />
+
+                <data android:scheme="content" />
+                <data android:host="com.android.calendar" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.MeetingAgentIntentService"
+            android:exported="false"
+            android:label="@string/service_name" />
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.WearMessagingService"
+            android:label="Wear Messaging Service" />
+
+        <receiver
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.ParkingAgentActivityReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.driving.DRIVING_STOPPED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.DriveAgentActivityReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.driving.DRIVING_STARTED" />
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.driving.DRIVING_STOPPED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.SleepAgentActivityReceiver"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.launcher.ACTION_ACTIVITY_UPDATED" />
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.launcher.ACTION_TILTING" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.receiver.DrivingActivityReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.mobiroo.n.sourcenextcorporation.agent.launcher.ACTION_ACTIVITY_ALL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.widget.AgentToggleWidgetProvider"
+            android:label="@string/widget_agent_toggle" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/agent_toggle_widget_info" />
+        </receiver>
+
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.tagstand.util.SpeakTextService"
+            android:label="@string/app_name" />
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.WidgetIntentService"
+            android:label="@string/service_name" />
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.AgentDashClockService"
+            android:icon="@drawable/ic_notification_agent"
+            android:label="@string/agent"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA" >
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="2" />
+            <meta-data
+                android:name="worldReadable"
+                android:value="true" />
+            <meta-data
+                android:name="description"
+                android:value="@string/agent_dashclock_description" />
+        </service>
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.DrivingService"
+            android:label="Driving Service" />
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.AgentNotificaitonListenerService"
+            android:label="Agent: Read notifications"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.ExpireTrialIntentService"
+            android:exported="false" >
+        </service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d6b5bc791c00f3c24c49de8e558b2662e5794bf0" />
+        <!--  146640e5c0be05e4bf0e86991eafe9e575d4b8af-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.mobiroo.n.sourcenextcorporation.agent.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <!--FCM related coding-->
+        <!--Notification Receiver Service ... (1)-->
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <!-- Registration Update Service ... (2)-->
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <!--PushMaker related coding-->
+        <!--FCM Registration Service (3)-->
+        <service
+            android:name="com.mobiroo.n.sourcenextcorporation.agent.service.MyRegistrationIntentService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

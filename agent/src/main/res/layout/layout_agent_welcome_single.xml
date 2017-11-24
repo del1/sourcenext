@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_single" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">    
+    
+    <View 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@android:color/transparent"/>
+        
+    <ImageView 
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/img_agent_intro"
+        android:layout_gravity="center"
+        android:clickable="true" android:onClick="installClicked" />
+
+    
+	<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/agent_welcome_ss"
+       style="@style/ShadowTextWhite"
+       android:textSize="22sp"
+       android:gravity="center"
+       android:paddingLeft="30dp"
+       android:paddingRight="30dp"
+       android:layout_marginBottom="30dp"/>
+    
+    <View 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".4"
+    android:background="@android:color/transparent"/>
+    
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_margin="12dp">
+
+		<TextView
+			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_weight="1" android:text="@string/welcome_lets_start"
+			style="@style/ShadowTextWhite" android:textSize="22sp"
+			android:layout_gravity="center" android:gravity="center"
+			android:clickable="true" android:onClick="installClicked"
+			android:background="@drawable/agent_button_accent_clickable" android:padding="12dp" />
+
+	</LinearLayout>
+   
+</LinearLayout>
+</FrameLayout>
+    
+
+
+
+

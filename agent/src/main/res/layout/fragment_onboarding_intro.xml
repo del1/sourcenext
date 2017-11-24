@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OnboardingTitle"
+            android:layout_marginBottom="48dp"
+            android:text="@string/onboarding_intro_title" />
+
+
+        <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OnboardingText"
+            android:layout_marginBottom="48dp"
+            android:text="@string/onboarding_intro_intro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OnboardingHeading"
+            android:layout_marginBottom="8dp"
+            android:text="@string/onboarding_intro_header_2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_action_calendar_month_white"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/onboarding_circle_solid" />
+
+            <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/OnboardingText"
+                android:layout_marginRight="2dp"
+                android:text="@string/your_calendar" />
+
+        </LinearLayout>
+
+        <View style="@style/OnboardingSpacer" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_bluetooth_white"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/onboarding_circle_solid" />
+
+            <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/OnboardingText"
+                android:layout_marginRight="2dp"
+                android:text="@string/your_cars_bluetooth" />
+
+            <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/OnboardingText"
+                android:textColor="@color/onboarding_sub_heading"
+                android:text="(optional)" />
+        </LinearLayout>
+
+
+        <View style="@style/OnboardingSpacer" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="0dp"
+	android:layout_weight="1" android:background="#ccc">
+	<LinearLayout android:id="@+id/configuration_items"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:paddingBottom="16dp"
+		android:paddingTop="12dp">
+	</LinearLayout>
+</ScrollView>

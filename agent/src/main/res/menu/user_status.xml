@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_notification_frequency"
+        android:title="Notification Frequency"
+        android:icon="@drawable/ic_notification_bell_white"
+        android:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/no_notifications"
+                    android:title="Never Notify" />
+                <item
+                    android:id="@+id/one_notification"
+                    android:title="Notify Once" />
+                <item
+                    android:id="@+id/all_notifications"
+                    android:title="Notify Always" />
+            </group>
+        </menu>
+    </item>
+</menu>

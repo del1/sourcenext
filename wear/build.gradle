@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId 'com.tryagent'
+        minSdkVersion 20
+        targetSdkVersion 20
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles 'proguard.cfg'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // You must install or update the Support Repository through the SDK manager to use this dependency.
+    // You must install or update the Support Repository through the SDK manager to use this dependency.
+    compile 'com.google.android.gms:play-services:5.0.+@aar'
+    compile "com.android.support:support-v13:20.0.+"
+    compile "com.google.android.support:wearable:1.0.+"
+}

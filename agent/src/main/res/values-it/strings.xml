@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <string name="agent">Agente</string>
+    <string name="agent_dashclock_description">Mostra quali agenti sono in funzione in tutti gli orari.</string>
+    <string name="accounts_description">Scegli i calendari dell\'Agente meeting per monitorare gli eventi. Devi selezionarne almeno uno.</string>
+
+    <string name="agent_action_pause_manual">ARRESTA</string>
+    <string name="agent_action_pause_battery">Ora non risparmiare la batteria.</string>
+    <string name="agent_action_pause_drive">Non sto guidando.</string>
+
+    <string name="agent_activated">Agente %1$s è incominciato.</string>
+    
+    <string name="agent_activated_meeting">È stata individuata una riunione (%s). Agente meeting è incominciato.</string>
+    <string name="agent_activated_meeting_name_unknown">È stata individuata una riunione. Agente meeting è incominciato.</string>
+    
+    <string name="agent_activity_blocker_disabled">Questo agente non è attivo. Usa l\'interruttore ON/OFF qui sopra per attivarlo.</string>
+    <string name="agent_config_blocker_disabled">Attiva questo agente per configurarlo.</string>
+    <string name="agent_config_blocker_started">Arresta questo agente per configurarlo.</string>
+    <string name="agent_confirm_manual_start">Vuoi avviare manualmente questo agente?</string>
+    <string name="agent_confirm_manual_stop">Vuoi interrompere questo agente?</string>
+    <string name="agent_confirm_manual_unpause">Vuoi riavviare questo agente?</string>
+    <string name="agent_confirm_sure">Sei sicuro?</string>
+    <string name="agent_contact_val_anyone">Chiunque</string>
+    <string name="agent_contact_val_custom">Elenco personalizzato</string>
+    <string name="agent_contact_val_mycontacts">I miei contatti</string>
+    <string name="agent_contact_val_noone">Scegli</string>
+    <string name="agent_contact_val_strangers_only">Solo sconosciuti</string>
+
+    <string name="agent_deactivated">Agente %1$s è terminato.</string>
+    <string name="agent_finished_sleep_agent">Agente sonno è terminato. Buongiorno!</string>
+    
+    <string name="agent_installed">Agente %1$s è stato attivato.</string>
+    <string name="agent_menu_config">Configura</string>
+    <string name="agent_menu_description">Info</string>
+    <string name="agent_menu_parking">Cartina del parcheggio</string>
+    
+
+    <string name="agent_not_enabled">DISATTIVATO</string>
+
+    <string name="agent_paused">Agente %1$s è stato arrestato manualmente.</string>
+    
+    <string name="agent_unpaused">Agente %1$s è stato avviato manualmente.</string>
+
+    <string name="agent_setup_enable">Attivazione di tutti gli agenti.</string>
+
+    <string name="agent_started_title_battery_manual">Agente batteria avviato</string>
+    <string name="agent_started_title_battery">Rilevata poca batteria</string>
+    <string name="agent_started_title_sleep_manual">Agente sonno avviato</string>
+    <string name="agent_started_title_sleep">È ora di andare a letto</string>
+    <string name="agent_started_title_meeting_manual">Agente meeting avviato</string>
+    <string name="agent_started_title_meeting">Meeting rilevato</string>
+    <string name="agent_started_title_drive_manual">Agente guida avviato</string>
+    <string name="agent_started_title_drive">Guida rilevata</string>
+    
+    <string name="agent_started_parking_agent">Agente parcheggio ha rilevato una fermata.</string>
+    <string name="agent_started_parking_manual">Salvataggio posizione parcheggio attuale (impiega 10 sec).</string>
+    <string name="agent_started_sleep_agent">Agente sonno è incominciato. Dormi bene!</string>
+    <string name="agent_status_activated">AVVIATO</string>
+
+    <string name="agent_status_bar_disabled">Disattivato. Non è possibile avviare questo agente se non è attivato.</string>
+    <string name="agent_status_bar_enabled_battery_agent">Si avvia quando la batteria è bassa.</string>
+    <string name="agent_status_bar_enabled_drive_agent">Si avvia la prossima volta che guidi.</string>
+    <string name="agent_status_bar_enabled_meeting_agent">Agente meeting è in attesa della tua prossima riunione.</string>
+    <string name="agent_status_bar_enabled_parking_agent">In attesa della prossima fermata.</string>
+    <string name="agent_status_bar_enabled_sleep_agent">Si avvia la prossima volta che vai a dormire.</string>
+    
+    <string name="agent_status_bar_started">Avviato. Clicca per arrestare.</string>
+    <string name="agent_status_bar_started_battery_agent">Avviato. Risparmio della batteria. Clicca per saltare questo passaggio.</string>
+    <string name="agent_status_bar_started_drive_agent">Avviato. Un aiuto per seguire la strada. Clicca per saltare questo passaggio.</string>
+    <string name="agent_status_bar_started_meeting_agent">Avviato. Disattivazione della suoneria. Clicca per saltare questo passaggio.</string>
+    
+    <string name="agent_status_bar_started_sleep_agent">Avviato. Blocco di interruzioni irrilevanti. Clicca per arrestare.</string>
+    <string name="agent_status_installed">ATTIVATO</string>
+    <string name="agent_status_idle">INATTIVO</string>
+    <string name="agent_status_paused">SOSPESO</string>
+    <string name="agent_uninstall_confirm">ATTENZIONE!</string>
+    <string name="agent_uninstall_confirm_warning">Se procedi, questo agente:\n\n• perderà tutte le impostazioni.\n\n• non si riavvierà finché non sarà riattivato.\n</string>
+    <string name="agent_uninstall_confirm_warning_nochange">Se prosegui, questo agente non si riavvia finché non verrà riattivato.\n</string>
+    <string name="agent_uninstalled">Agente %1$s è stato disattivato.</string>
+    <string name="agent_updated_text">(Testo salvato)</string>
+    <string name="agent_updating_settings">Aggiornamento impostazioni…</string>
+    <string name="agent_was_installed">Agent non è stato installato.</string>
+    <string name="agent_welcome_ss">Agent contiene 5 funzioni che miglioreranno il tuo telefono.</string>
+
+    <string name="agents">Agenti</string>
+    <string name="agents_feed">Attività</string>
+
+    <string name="app_name">Agent</string>
+
+    <string name="auto_response">Risposta automatica</string>
+
+    <string name="battery_agent_autosync_off">Disattivazione sincronizzazione automatica.</string>
+    <string name="battery_agent_brightness_down">Abbassamento luminosità dello schermo.</string>
+    <string name="battery_agent_brightness_level_explanation">Attenua la luminosità dello schermo secondo la percentuale indicata.</string>
+    <string name="battery_agent_bt_off">Disattivazione Bluetooth.</string>
+    <string name="battery_agent_description">Aumenta la durata della batteria.</string>
+    <string name="battery_agent_description_long">Risparmia batteria per quando ne hai bisogno.</string>
+    <string name="battery_agent_description_first">Se il livello della batteria è basso, Agente batteria disattiverà le funzioni non importanti.</string>
+    <string name="battery_agent_disable_when_charging">Disattiva se in carica</string>
+    <string name="battery_agent_mobile_data_off">Disattivazione dati mobili.</string>
+    <string name="battery_agent_no_start_screen_on">Non avviare se lo schermo è acceso</string>
+    <string name="battery_agent_percent_trigger">Imposta la percentuale del trigger</string>
+    <string name="battery_agent_title">Batteria</string>
+    <string name="battery_agent_trigger_bat">Disattiva le funzioni non critiche quando la batteria sta scendendo al di sotto del livello impostato.</string>
+    <string name="battery_agent_trigger_bt">Attiva/disattiva Bluetooth per risparmiare energia.</string>
+    <string name="battery_agent_trigger_explanation">Si avvia quando la batteria scende sotto questa  percentuale, si arresta quando la supera.</string>
+    <string name="battery_agent_trigger_screen">Attenua la luminosità dello schermo quanto basta per risparmiare batteria.</string>
+    <string name="battery_agent_trigger_sync">Sospende la sincronizzazione automatica. Ciò riduce l\'utilizzo dei dati, ma permette le chiamate e le attività di messaggeria.</string>
+    <string name="battery_agent_wifi_off">Disattivazione Wifi.</string>
+    
+
+    <string name="bluetooth_chooser_description">Seleziona le reti Bluetooth:</string>
+    <string name="bluetooth_chooser_continue">Continua</string>
+    
+    <string name="btn_stop">Arresta</string>
+    
+    <string name="cc_contacts_names">%1$s contatti selezionati (%2$s).</string>
+    <string name="cc_contacts">%1$s contatti selezionati.</string>
+    <string name="cc_search">Cerca contatti…</string>
+    <string name="cc_strangers">Altri numeri</string>
+
+    <string name="config_allow_repeat">Autorizza le chiamate ripetute</string>
+    <string name="config_auto_respond_phone">Risposta automatica alle chiamate</string>
+    <string name="config_auto_respond_text">Risposta automatica ai messaggi</string>
+    <string name="config_busy_only">Solo per eventi segnati come &quot;occupati&quot;</string>
+    <string name="config_describe_wake_me">Solo le persone dell\'elenco \"Contatti autorizzati a svegliarmi\" possono svegliarmi.</string>
+    <string name="config_dim_display">Attenua la luminosità dello schermo</string>
+    <string name="config_dim_display_level">Diminuisci il livello della luminosità dello schermo</string>
+    <string name="config_drive_bt_network">Connessione Bluetooth:</string>
+    <string name="config_drive_bt_network_unspecified">Non specificata</string>
+    <string name="config_drive_bt_network_multiple">Multipla</string>
+    <string name="config_percentage">(%1$s/100)</string>
+    <string name="config_read_sms_aloud">Leggi i messaggi con il viva voce</string>
+    <string name="config_silence_phone">Disattiva suoneria</string>
+    <string name="config_silence_volume">Notifiche</string>
+    <string name="config_silence_off">Vibrazione</string>
+    <string name="config_silence_on">Muto</string>
+    <string name="config_start_only_when_charging">Avvio solo se collegato alla rete</string>
+    <string name="config_turn_off_bt">Disattiva Bluetooth</string>
+    <string name="config_turn_off_mobile_data">Disattiva i dati mobili</string>
+    <string name="config_turn_off_syncing">Disattiva sincronizzazione automatica</string>
+    <string name="config_turn_off_wifi">Disattiva Wifi</string>
+    <string name="config_urgent_mode">Invia un messaggio per verificare l\'urgenza</string>
+    <string name="config_urgent_verification">Messaggio di verifica</string>
+    <string name="config_urgent_meeting_description">Dopo la verifica dell\'urgenza verrà inviato un messaggio alle persone dell\'elenco \"Contatti autorizzati a chiamarmi\". Agente meeting ti avvertirà solo se queste persone hanno risposto indicando \"urgente\" nel loro messaggio.</string>
+    <string name="config_urgent_sleep_description">Dopo la verifica dell\'urgenza verrà inviato un messaggio alle persone dell\'elenco \"Contatti autorizzati a svegliarmi\". Agente sonno ti sveglierà solo se queste persone hanno risposto indicando \"urgente\" nel loro messaggio.</string>
+    <string name="config_use_activity_detection">Il rilevamento attività (beta)</string>
+    <string name="config_wake_phone">Le chiamate possono svegliarmi</string>
+    <string name="config_wake_sms">I messaggi possono svegliarmi</string>
+    
+
+    <string name="configure_agent">Configura</string>
+
+    <string name="contact_text">Il tuo feedback ci aiuta a rendere Agent più utile.\n\nHai un\'idea da proporre?\nVuoi un agente che funzioni diversamente?\n\nMandaci le tue proposte tramite le risorse qui sotto:</string>
+
+    <string name="contacts_allowed">Contatti autorizzati a svegliarmi</string>
+    <string name="contacts_allowed_drive">A chi rispondere</string>
+
+    <string name="day_friday">V</string>
+    <string name="day_monday">L</string>
+    <string name="day_saturday">S</string>
+    <string name="day_sunday">D</string>
+    <string name="day_thursday">G</string>
+    <string name="day_tuesday">Ma</string>
+    <string name="day_wednesday">Me</string>
+
+    <string name="days_of_week_description_calendar">Scegli i giorni da monitorare per gli eventi del calendario.</string>
+
+    <string name="time_ranges_item">Scegli gli orari in cui vuoi che questo agente si attivi.</string>
+    
+
+    <string name="dismiss">Ignora</string>
+
+    <string name="drive_agent_default_autorespond">In questo momento sto guidando. Ti risponderò appena possibile (risposta automatica dell\'app Agent).</string>
+    <string name="drive_agent_description">Risposta automatica agli SMS mentre stai guidando.</string>
+    <string name="drive_agent_description_long">Legge i messaggi e risponde automaticamente ai messaggi e alle chiamate.</string>
+    <string name="drive_agent_description_first">Se stai guidando, Agente guida legge i messaggi a viva voce e risponde automaticamente ai messaggi e alle chiamate.</string>
+    <string name="drive_agent_silence">Disattivazione suoneria.</string>
+    <string name="drive_agent_reading">Lettura messaggi.</string>
+    <string name="drive_agent_text">Risposta automatica ai tuoi messaggi.</string>
+    <string name="drive_agent_title">Guida</string>
+    <string name="drive_agent_trigger_bt">Utilizza Bluetooth per i rilevamenti durante la guida.</string>
+    <string name="drive_agent_trigger_sms">Utilizza gli SMS per rispondere a coloro che cercano di contattarti, informandoli che stai guidando.</string>
+
+
+    <string name="end_time">Ora di fine</string>
+
+
+    <string name="feedback_rate">Valuta l\'app</string>
+    <string name="feedback_rate_gplay">Google Play</string>
+
+    <string name="help_email">Inviaci un\'email</string>
+    <string name="help_gplus">Scrivici su Google+</string>
+    <string name="help_trigger">Crea i tuoi agenti</string>
+
+    <string name="idea">Domande? Problemi? Hai un\'idea per un agente? Scrivici.</string>
+
+    <string name="incoming_sms">SMS in arrivo</string>
+    <string name="incoming_sms_sender">SMS di %1$s in arrivo</string>
+
+    <string name="layoutAlarmForwardText">minuti da adesso</string>
+    <string name="layoutPreferencesDebugClear">Cancella registro di debug</string>
+    <string name="layoutPreferencesDebugView">Visualizza registro di debug</string>
+    <string name="layoutPreferencesNotifications">Limite di notifiche</string>
+    <string name="layoutPreferencesNotificationsNone">Nessuna notifica</string>
+    <string name="layoutPreferencesNotificationsOne">Una notifica alla volta</string>
+    <string name="layoutPreferencesPreserveSettingsOnAgentUninstall">Mantieni le impostazioni su agente disattivato (beta)</string>
+    <string name="layoutPreferencesUsage">Permetti analisi anonime</string>
+    <string name="layoutPreferencesZipDebugFile">Comprimi registro di debug all\'invio</string>
+
+    <string name="loading_agents">Caricamento agenti.</string>
+
+    <string name="meeting_agent_default_autorespond">Sono impegnato in un meeting in questo momento. Se mi invii il messaggio \"urgente\", riceverò un avviso (risposta automatica dell\'app Agent).</string>
+    <string name="meeting_agent_calendar">Utilizza il calendario per stabilire quando sei occupato.</string>
+    <string name="meeting_agent_config_phone">Autorizza alcune chiamate</string>
+    <string name="meeting_agent_config_text">Autorizza alcuni messaggi</string>
+    <string name="meeting_agent_config_contacts">Contatti autorizzati a chiamarmi</string>
+    <string name="meeting_agent_description">Utilizza il calendario per stabilire quando sei occupato.</string>
+    <string name="meeting_agent_description_long">Disattiva la suoneria così non verrai disturbato durante le riunioni.</string>
+    <string name="meeting_agent_description_first">Agente meeting disattiva la suoneria quando rileva una riunione segnata come \"occupato\" nel calendario.</string>
+    <string name="meeting_agent_time_title">Agente meeting si avvierà solo per le riunioni nelle seguenti ore. Gli eventi che durano \"Tutto il giorno\" verranno ignorati.</string>
+    <string name="meeting_agent_title">Meeting</string>
+
+    <string name="menu_chooser_mail">Invia email</string>
+    <string name="menu_contact">Contattaci</string>
+    <string name="menu_set_state">Attiva/Disattiva agente</string>
+
+    <string name="more_info">COME FUNZIONA</string>
+    <string name="more_settings">ALTRE IMPOSTAZIONI</string>
+    <string name="reset_settings">RIPRISTINA PREDEFINITI</string>
+    
+    <string name="no">Annulla</string>
+    <string name="no_google_plus_client">Spiacente, non vi è connessione al client Google Plus!</string>
+
+    <string name="parking_agent_bt_desc">Nota: se specifichi una rete qui sopra, Agente parcheggio non utilizzerà il rilevamento attività, bensí registrerà la tua posizione ogni volta che ti disconnetti da questa rete Bluetooth.</string>
+    <string name="parking_agent_clear_button">CANCELLA I PARCHEGGI</string>
+    <string name="parking_agent_description">Per ricordarti dove hai parcheggiato.</string>
+    <string name="parking_agent_description_long">Ti ricorda automaticamente dove hai parcheggiato.</string>
+    <string name="parking_agent_map_guide">Clicca su qualsiasi elemento qui sotto per vederlo nella cartina.</string>
+    <string name="parking_agent_map_guide_no_pins">Agente parcheggio non ha ancora registrato nessuna posizione.\n\n<b>Nota:</b> le informazioni riguardo alla tua posizione non vengono inviate ad altri, verranno registrate solo sul telefono.</string>
+    <string name="parking_agent_title">Parcheggio</string>
+    <string name="parking_agent_trigger_activity">Una volta raggiunta una certa velocità, utilizza l\'attività di rilevamento per indicare dove hai parcheggiato la macchina.</string>
+    <string name="parking_agent_trigger_bt">Registrerà la tua posizione quando ti disconnetti dal dispositivo Bluetooth (facoltativo).</string>
+    <string name="parking_agent_trigger_pin">Verrà posta automaticamente una puntina sulla cartina dell\'app per mostrarti dove hai parcheggiato.</string>
+    
+    <string name="parking_source_bt">Posizione rilevata a seguito della disconnessione a Bluetooth.</string>
+    <string name="parking_source_ad">Posizione ottenuta in base al rilevamento attività.</string>
+    <string name="parking_source_manual">Posizione ottenuta da un input manuale.</string>
+    <string name="parking_more">Alcune posizioni sono state nascoste perché probabilmente non sono parcheggi. Clicca qui per vedere le posizioni nascoste.</string>
+    
+    <string name="service_name">Monitoraggio del dispositivo</string>
+
+    <string name="start_service_name">Avvia servizio</string>
+    <string name="finish_service_name">Arresta servizio</string>
+    <string name="pause_service_name">Sospendi servizio</string>
+            
+    
+    <string name="show_about">Info su Agent</string>
+    <string name="show_welcome">Mostra la schermata di benvenuto</string>
+    <string name="show_issues">Mostra schermata di diagnostica</string>
+    
+    <string name="sleep_agent_activate_on_inactivity">In attesa di inattività per iniziare</string>
+    <string name="sleep_agent_inactivity_time">Attendi (circa):</string>
+    <string name="sleep_agent_default_autorespond">Sto dormendo. Se il tuo messaggio è \"urgente\", il mio telefono suonerà forte e mi sveglierà (risposta automatica dell\'app Agent).</string>
+    <string name="sleep_agent_description">Se dormi, verrai svegliato soltanto dai messaggi importanti.</string>
+    <string name="sleep_agent_description_long">Disattiva la suoneria quando dormi, ma permette alle persone selezionate di chiamarti.</string>
+    <string name="sleep_agent_description_first">Agente sonno disattiva la suoneria quando dormi. Puoi autorizzare le chiamate di alcuni amici e parenti.</string>
+    <string name="sleep_agent_silence">Disattivazione della suoneria.</string>
+    <string name="sleep_agent_text">Autorizzazione a suonare per i messaggi selezionati.</string>
+    <string name="sleep_agent_phone">Autorizzazione per le chiamate selezionate.</string>
+    <string name="sleep_agent_title">Sonno</string>
+    <string name="sleep_agent_trigger_sms">Prima di svegliarti, Agente sonno scrive un messaggio a chi chiama per  verificare se è urgente.</string>
+    <string name="sleep_agent_trigger_time">Utilizza un orario (per es. dalle 23 alle 7) e i minuti di inattività per sapere se stai dormendo.</string>
+    <string name="sleep_agent_trigger_volume">Utilizza la suoneria per svegliarti se ricevi un messaggio urgente.</string>
+    <string name="sleep_agent_verify_urgent">Chiederà agli amici se è urgente tramite un messaggio.</string>
+    <string name="start_time">Ora d\'inizio</string>
+
+    <string name="status_battery_on">Agente %1$s ha modificato le impostazioni per risparmiare energia.</string>
+    <string name="status_texted_phone">Agente %1$s ha risposto automaticamente a una chiamata.</string>
+    <string name="status_texted_sub">Messaggio inviato a %1$s.</string>
+    <string name="status_texted_text">Agente %1$s ha risposto automaticamente a un messaggio.</string>
+
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="title_feedback">Feedback</string>
+    <string name="title_settings">Impostazioni</string>
+
+    <string name="trigger_always_active">Sempre attivo</string>
+    <string name="trigger_battery">Batteria</string>
+    <string name="trigger_bluetooth">Connessione Bluetooth</string>
+    <string name="trigger_driving">Alla guida</string>
+    <string name="trigger_manual">Manuale</string>
+    <string name="trigger_nfc">NFC</string>
+    <string name="trigger_parking">Parcheggio</string>
+    <string name="trigger_phone_call">Chiamata</string>
+    <string name="trigger_missed_call">Chiamata persa</string>
+    <string name="trigger_sms">SMS</string>
+    <string name="trigger_time">Ora</string>
+    <string name="trigger_unknown">Sconosciuto</string>
+    <string name="trigger_wifi">Connessione Wifi</string>
+
+    <string name="unknown">Sconosciuto</string>
+
+    <string name="urgent">URGENTE</string>
+    
+    <string name="wake_msg_urgent">Qualcuno ha bisogno di parlarti urgentemente.</string>    
+
+    <string name="yes">Continua</string>
+    
+    <string name="welcome_lets_start">INIZIAMO!</string>
+
+    <string name="parking_spot">Posizione del veicolo</string>
+    
+    <string name="help">Guida</string>
+    <string name="help_header_intro">Introduzione</string>
+    <string name="help_header_text">Agent è un\'applicazione d\'utilità che cambia il comportamento del telefono in base alle tue esigenze.\r\n\r\nUtilizza i sensori del telefono (accelerometro, GPS, connessioni Bluetooth ecc.) per stabilire che cosa stai facendo e fa in modo che il telefono si comporti di conseguenza.\r\n\r\nSperiamo di riuscire a migliorare il comportamento del tuo telefono in modo tale da fartelo apprezzare al massimo.</string>
+
+    <string name="help_battery_intro">Agente batteria</string>
+    <string name="help_battery_text"><b>Agente batteria</b> ti aiuta a risparmiare la batteria. Si avvia se la batteria scende al di sotto del livello che hai indicato. Puoi configurarlo in:</string>
+    <string name="help_battery_list">
+	• Disattiva Wifi.\n\n
+	• Disattiva i dati mobili.\n\n
+	• Attenua la luminosità dello schermo.\n\n
+	• Sospendi sincronizzazione automatica [nota: ciò NON impedirà di ricevere messaggi o chiamate, ma arresterà semplicemente la sincronizzazione delle app in background].\n\n
+	• Ritorna alle impostazioni normali quando il livello della batteria raggiunge la pecentuale del trigger indicata.\n\n</string>
+    
+    <string name="help_sleep_intro">Agente sonno</string>
+    <string name="help_sleep_text"><b>Agente sonno</b> disattiva automaticamente la suoneria del telefono quando vai a dormire. Puoi configurarlo come segue:</string>
+    <string name="help_sleep_list">
+	• Minuti di inattività prima dell\'avvio.\n\n
+	• Risposta automatica alle chiamate e ai messaggi  durante le ore di sonno.\n\n
+	• Elenco dei contatti che ti possono svegliare.\n\n</string>
+    
+    <string name="help_parking_intro">Agente parcheggio</string>
+    <string name="help_parking_text"><b>Agente parcheggio</b> ti ricorda dove hai parcheggiato la macchina. Registra la posizione ogni volta che la macchina si sposta. Vi è inoltre l\'opzione che permette di configurare un dispositivo Bluetooth. Mostra le ultime dieci volte che hai parcheggiato la macchina su una cartina dell\'app.</string>
+    
+    <string name="help_meeting_intro">Agente meeting</string>
+    <string name="help_meeting_text"><b>Agente meeting</b> sincronizza gli eventi del tuo calendario per disattivare la suoneria del telefono quando non vuoi essere disturbato. Si avvia in base agli eventi del tuo calendario. Può essere configurato così:</string>
+    <string name="help_meeting_list">
+	• Risposta solo in determinate ore/giorni durante gli eventi.\n\n
+	• Autorizza alcune chiamate e messaggi quando sei occupato.\n\n</string>
+    
+    <string name="help_drive_intro">Agente guida</string>
+    <string name="help_drive_text"><b>Agente guida</b> elimina le distrazioni durante la guida. Si avvia tramite Bluetooth o in base al rilevamento attività (funzionalità beta). Può essere configurato così:</string>
+    <string name="help_drive_list">
+	• Legge gli SMS tramite il viva voce.\n\n
+	• Risponde automaticamente ai messaggi e alle chiamate per informare che stai guidando (messaggio modificabile).\n\n
+	• Risponde solo alle persone dell\'elenco che hai indicato.\n\n
+	• Risponde a coloro che non sono nell\'elenco dei contatti.\n\n</string>
+
+    <string name="rate_us_text">Bene! Se hai tempo, scrivi una recensione. Ci farebbe molto piacere.</string>
+    <string name="rate_us_ok">Valuta l\'app ora!</string>
+    <string name="rate_us_no">Forse più tardi.</string>
+    
+
+    <string name="selected_contacts_header">Contatti selezionati</string>
+    <string name="selected_contacts_subheader">I contatti che hai selezionato.</string>
+    
+    
+    <string name="satisfaction_header">Domande veloci</string>
+    <string name="satisfaction_subheader">Siamo felici di saperlo!</string>
+    <string name="satisfaction_question">Cosa pensi di Agent?</string>
+    <string name="satisfaction_love">Lo adoro.</string>
+    <string name="satisfaction_like">Mi piace.</string>
+    <string name="satisfaction_dont_like">È macchinoso.</string>
+    	    
+    
+    <string name="agent_parking_location">Posizione Agente parcheggio</string>
+
+    <string name="minutes">minuti</string>
+    
+    <string name="app_issue_ad_install_title">Non funziona il rilevamento attività</string>
+    <string name="app_issue_ad_install_description">Riavvia il telefono !\n\n Spiegazione: Agent non ha ricevuto nessuna trasmissione relativa alla tua attività da Android, quindi le funzionalità di alcuni agenti, che utilizzano il rilevamento attività, non funzionano. \n\n Controlla che i servizi di Google Play siano installati. Se i servizi di Google Play sono installati, spesso il riavvio del telefono risolve il problema. Dopo aver riavviato il telefono, aspetta 3&#8211;5 minuti prima di aprire Agent poiché la ricezione delle trasmissioni potrebbe richiedere del tempo.</string>
+    <string name="app_issue_goprosms_title">GoPro SMS impedisce a Agent di ricevere i messaggi.  Clicca qui per maggiori informazioni.</string>
+    <string name="app_issue_goprosms_description">GoPro SMS impedisce ad Agent di ricevere messaggi. Per evitare questo inconveniente, disattiva \"Blocca notifiche\" nelle impostazioni avanzate dell\'applicazione GoProSMS.</string>
+    <string name="app_issue_goprosms_link">Qui puoi trovare maggiori informazioni su questo problema:\nhttp://www.tryagent.com/issues#gosmspro</string>
+
+    <string name="app_issue_textra_title">Textra impedisce a Agent di ricevere i messaggi. Clicca qui per maggiori informazioni.</string>
+    <string name="app_issue_textra_description">Textra impedisce a Agent (e a tutte le altre app) di accedere ai messaggi. Chiedi agli sviluppatori di  Textra di risolvere il problema.</string>
+    
+    <string name="app_issue_dialog_message">Problema dell\'applicazione</string>
+    <string name="app_issue_keep">Mantieni questo avviso</string>
+    <string name="app_issue_dismiss">Ignora avviso</string>
+    <string name="app_issue_ok">OK</string>
+    <string name="app_issue_none">Non sono stati rilevati problemi sul tuo dispositivo!</string>
+    <string name="app_issue_title">Risultati diagnostica</string>
+    
+    <string name="open_in_maps">Apri in Maps</string>
+
+    <string name="widget_agent_choose">Scegli il widget che ti piace per il controllo di Agent.</string>
+    <string name="widget_agent_toggle">Agent</string>
+    
+    <string name="working">In funzione.</string>
+    
+    <string name="save_error">Errore di salvataggio.</string>
+    
+    <string name="main_calendar">Calendario principale</string>
+
+    
+
+    
+    <string name="starts_at">Inizia alle:</string>
+    <string name="ends_at">Finisce alle:</string>
+
+
+    <string name="edit_time_ranges">Modifica orari</string>
+    <string name="edit_time_range">Modifica orario</string>
+
+    <string name="edit_times">Clicca per modificare o aggiungere orari.</string>
+    <string name="no_times_setting">Non hai inserito nessun orario. Agente sonno non si avvierà.</string>
+    <string name="no_times">Non hai inserito orari. Aggiungili cliccando il tasto \'più\' qui sopra (in alto a destra).</string>
+
+    <string name="range_is_long_title">Avviso orario</string>
+    <string name="range_is_long_warning">Questo orario supera le 24 ore.\n\nAgente sonno non funzionerà per tutto questo tempo. Vuoi veramente questo orario?</string>
+    
+    <string name="sleep_ranges_description">Orari di attivazione Agente sonno</string>
+    
+    <string name="first_notification_drive_bt">Se stai guidando, Agent ti aiuterà a leggere i messaggi e a inviare risposte automaticamente.</string>
+    <string name="first_notification_drive_ad">Agent pensa che tu stia guidando. Ti aiuterà a leggere i messaggi e invierà risposte automatiche.</string>
+    
+    <string name="first_notification_meeting">Agent pensa che tu abbia una riunione. Disattiverà la suoneria per tutta la durata della riunione.</string>
+    
+    <string name="first_notification_battery">Sembra che la batteria sia bassa. Agent diminuirà la luminosità dello schermo per far durare di più la batteria.</string>
+    
+	<string name="first_notification_sleep">Agent pensa che tu stia andando a dormire. Disattiverà  automaticamente la suoneria finché non ti svegli.</string>
+    
+
+    <string name="learn_more">PER SAPERNE DI PIÙ</string>
+    
+    <string name="agent_info_prompt">Come ti sembra?</string>
+    <string name="agent_info_in">Ci sono!</string>
+    <string name="agent_info_no">No, grazie.</string>
+    
+    <string name="dashclock_status_trailer">/5 attivi.</string>
+    <string name="dashclock_status_expanded_start">Agenti attivi:</string>
+    <string name="dashclock_title_end">agenti sono in funzione.</string>
+    <string name="dashclock_no_agents_running">Nessun agente in funzione attualmente.</string>
+    
+</resources>

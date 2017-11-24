@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#ccc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/preMapItems"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccc"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/configuration_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/agent_background_card"
+            android:orientation="vertical"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mapItems"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccc"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="TextSizeOne">14sp</dimen>
+    <dimen name="TextSizeThree">16sp</dimen>
+    <dimen name="TextSizeSmall">12sp</dimen>
+
+
+    <!--  Agent specific -->
+    <dimen name="AgentListTitle">20sp</dimen>
+    <dimen name="AgentSectionTitle">24sp</dimen>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="step_pager_tab_width">40dp</dimen>
+    <dimen name="step_pager_tab_height">6dp</dimen>
+    <dimen name="step_pager_tab_spacing">12dp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Spacer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#5A5A5A</item>
+        <item name="android:layout_span">3</item>
+        <item name="android:gravity">fill_horizontal</item>
+    </style>
+
+    <style name="SpacerLight">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#e9eae9</item>
+        <item name="android:layout_span">3</item>
+        <item name="android:gravity">fill_horizontal</item>
+    </style>
+    
+    <style name="SpacerLightPadded">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">#e9eae9</item>
+        <item name="android:layout_span">3</item>
+        <item name="android:gravity">fill_horizontal</item>
+    </style>
+
+    <style name="SpacerLightAltPadded">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">#c9cac9</item>
+        <item name="android:layout_span">3</item>
+        <item name="android:gravity">fill_horizontal</item>
+    </style>
+
+    <style name="SpacerLightAltPaddedVertical">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">20dip</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">#c9cac9</item>
+        <item name="android:layout_span">3</item>
+        <item name="android:gravity">fill_horizontal</item>
+    </style>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agent_configuration_status_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/agent_configuration_status_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/agent_bar_button_clickable"
+        android:clickable="true"
+        android:gravity="center_vertical|left"
+        android:minHeight="53dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/agent_configuration_status_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="left"
+            android:paddingBottom="4dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="12dp"
+            android:paddingTop="4dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/configure_agent"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+        
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="53dp" android:paddingLeft="12dp"
+			android:paddingRight="12dp" android:background="@android:color/transparent"
+			android:orientation="horizontal">
+			
+        <ImageView
+            android:id="@+id/agent_configuration_status_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_pause" >
+        </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

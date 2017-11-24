@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:paddingLeft="16dp" android:paddingTop="9dp" android:paddingBottom="8dp" android:orientation="horizontal" android:background="#222222">
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+			android:id="@+id/text" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:textAllCaps="true"
+			android:textColor="#fff" android:textSize="28sp" android:background="#222222" />
+	</LinearLayout>
+	<View android:layout_width="fill_parent" android:layout_height="1dp"
+		android:background="#222" />
+	<View android:layout_width="fill_parent" android:layout_height="1dp"
+		android:background="#444" />
+	<View android:layout_width="fill_parent" android:layout_height="1dp"
+		android:background="#666" />
+
+</LinearLayout>

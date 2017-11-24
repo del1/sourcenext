@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="@color/BGColor" android:orientation="vertical">
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="#ddd"
+		android:orientation="vertical" android:padding="18dp">
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoCondensedBold
+		    android:id="@+id/title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/satisfaction_header" android:textColor="@color/TextColor"
+			android:textSize="30sp" />
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+		    android:id="@+id/sub_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/satisfaction_subheader" android:textColor="@color/TextColor"
+			android:textSize="12sp" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="@color/BGColor"
+		android:orientation="vertical" android:padding="18dp">
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+		    android:id="@+id/long_description"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:text="@string/satisfaction_question"
+			android:textColor="@color/TextColor" android:textSize="18sp" />
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+		    android:id="@+id/prompt"
+		    android:paddingTop="12dp"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:text="@string/agent_info_prompt"
+			android:textColor="@color/TextColor" android:textSize="18sp" />
+				
+	</LinearLayout>
+
+	<View android:layout_width="match_parent" android:layout_height="1dp"
+		android:background="#999" />
+
+	
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="@color/BGColor"
+		android:orientation="horizontal">
+	
+	<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+		android:layout_width="0dp" android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:paddingTop="12dp" android:paddingLeft="18dp"
+		android:paddingRight="18dp" android:paddingBottom="12dp"
+		android:clickable="true" android:text="@string/agent_info_no"
+		android:textColor="@color/TextColor" android:textSize="16sp"
+		android:onClick="uninstall" android:background="@drawable/item_default_clickable" />
+	    
+	
+	<View android:layout_width="1dp" android:layout_height="match_parent"
+		android:background="#999" />
+
+	<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+		android:layout_width="0dp" android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:paddingTop="12dp" android:paddingLeft="18dp"
+		android:paddingRight="18dp" android:paddingBottom="12dp"
+		android:clickable="true" android:text="@string/agent_info_in"
+		android:textColor="@color/TextColor" android:textSize="16sp"
+		android:onClick="complete" android:background="@drawable/item_default_clickable" />
+	
+	</LinearLayout>
+
+</LinearLayout>

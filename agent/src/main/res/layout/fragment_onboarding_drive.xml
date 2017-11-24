@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OnboardingTitle"
+            android:layout_marginBottom="48dp"
+            android:text="@string/setup_car_bluetooth" />
+
+        <com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+            android:id="@+id/intro"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OnboardingText"
+            android:layout_marginBottom="48dp"
+            android:text="@string/onboarding_drive_intro" />
+
+        <LinearLayout
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="4dp"
+                android:text="@string/loading_bluetooth_devices" />
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/list"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/info"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OnboardingText"
+            android:text="@string/drive_agent_onboarding_no_bluetooth_devices" />
+
+    </LinearLayout>
+</ScrollView>

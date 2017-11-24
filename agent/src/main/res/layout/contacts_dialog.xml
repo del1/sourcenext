@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="@color/BGColor" android:orientation="vertical">
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="#ddd"
+		android:orientation="vertical" android:padding="18dp">
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoCondensedBold
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/selected_contacts_header" android:textColor="@color/TextColor"
+			android:textSize="30sp" />
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/selected_contacts_subheader" android:textColor="@color/TextColor"
+			android:textSize="12sp" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="@color/BGColor"
+		android:orientation="vertical" android:padding="18dp">
+
+		<com.mobiroo.n.sourcenextcorporation.tagstand.util.TextViewRobotoLight
+		    android:id="@+id/contacts_text"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:textColor="@color/TextColor" android:textSize="18sp" />
+	</LinearLayout>
+
+</LinearLayout>
