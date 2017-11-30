@@ -411,7 +411,7 @@ public class MainActivity extends FragmentActivity {
     @Override
     public void onResume() {
 //        if(!DateUtils.isToday(PrefsHelper.getPrefLong(MainActivity.this, Constants.PREF_DRM_SHOWN_DATE, 0L))) {
-            //validate(MainActivity.this); //rohans comment //as per instruction
+        //validate(MainActivity.this); //rohans comment //as per instruction
 //        }
 
         super.onResume();
@@ -423,7 +423,7 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-//rohans comment //as per instruction
+    //rohans comment //as per instruction
     private void validate(final Activity myActivity) {
         myActivity.runOnUiThread(new Runnable() {
             @Override
@@ -626,16 +626,16 @@ public class MainActivity extends FragmentActivity {
 //                    }
 //                };
 //            } else {
-                r = new Runnable() {
-                    @Override
-                    public void run() {
-                        setupUpgrade(getString(R.string.click_to_purchase));
-                        List<Agent> installed = AgentFactory.getInstalledAgents(MainActivity.this);
-                        if (installed.size() > 0) {
-                            startService(new Intent(MainActivity.this, ExpireTrialIntentService.class));
-                        }
+            r = new Runnable() {
+                @Override
+                public void run() {
+                    setupUpgrade(getString(R.string.click_to_purchase));
+                    List<Agent> installed = AgentFactory.getInstalledAgents(MainActivity.this);
+                    if (installed.size() > 0) {
+                        startService(new Intent(MainActivity.this, ExpireTrialIntentService.class));
                     }
-                };
+                }
+            };
 //            }
             initIabClientForPurchaseCheck(r, trial_message);
         }
@@ -871,16 +871,25 @@ public class MainActivity extends FragmentActivity {
         if(selectedDrawerListElement.getType() != DrawerListElementType.LINK) {
             final SharedPreferences prefs = PreferenceManager
                     .getDefaultSharedPreferences(MainActivity.this);
+
             Editor editor = prefs.edit();
+
+            //setting the last position of the drawer item....
             editor.putInt(LAST_DRAWER_LOCATION, position);
             editor.commit();
 
+            //getting the current position of the drawer...
             mCurrentPosition = position;
 
+            //string tag stores the name of the current drawer item in it....
             String tag = selectedDrawerListElement.getTag();
 
             FragmentManager manager = getSupportFragmentManager();
             FragmentTransaction transaction = manager.beginTransaction();
+
+            //if the current mCurrentTag is not empty than
+            //initialize the mCurrentTag to the current tag
+            // and hide the current tag so that the new fragment can be seen
 
             if (mCurrentTag != null) {
                 Fragment current = manager.findFragmentByTag(mCurrentTag);
@@ -889,7 +898,7 @@ public class MainActivity extends FragmentActivity {
                 }
             }
 
-            // Get new fragment
+            // the selected fragment is than inflated on the screen...
             Fragment f = manager.findFragmentByTag(tag);
             if (f == null) {
                 Logger.i("Getting new fragment for " + tag);

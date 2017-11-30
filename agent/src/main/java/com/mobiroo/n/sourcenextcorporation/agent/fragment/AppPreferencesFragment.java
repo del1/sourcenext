@@ -56,10 +56,16 @@ public class AppPreferencesFragment extends Fragment {
 
         attachOnClick(R.id.notifications_one, mSettingsView);
         attachOnClick(R.id.notifications_none, mSettingsView);
+
+        //rohan's code...
+        //this are the changes made for the japanese version of code
+        /*
         attachOnClick(R.id.prefAnalytics, mSettingsView);
         attachOnClick(R.id.prefDebugViewContainer, mSettingsView);
         attachOnClick(R.id.prefDebugClearContainer, mSettingsView);
         attachOnClick(R.id.prefZipDebugFile, mSettingsView);
+        */
+
         attachOnClick(R.id.prefPreserveSettingsOnAgentUninstall, mSettingsView);
         attachOnClick(R.id.prefSoundOnAgentStart, mSettingsView);
         attachOnClick(R.id.prefPushNotification, mSettingsView);
@@ -119,30 +125,35 @@ public class AppPreferencesFragment extends Fragment {
 
 
     public void onClick(final View v) {
-        Intent intent;
 
+        Intent intent;
         switch (v.getId()) {
+
             case R.id.notifications_one:
                 if (((RadioButton) v).isChecked()) {
                     getEditor(getActivity()).putInt(Constants.PREF_NOTIFICATIONS,
                             Constants.PREF_VAL_NOTIFICATIONS_ONE).commit();
                 }
                 break;
+
             // case R.id.notifications_all:
             // if (((RadioButton) v).isChecked()) {
             // getEditor(getActivity()).putInt(Constants.PREF_NOTIFICATIONS,
             // Constants.PREF_VAL_NOTIFICATIONS_ALL).commit(); }
             // break;
+
             case R.id.notifications_none:
                 if (((RadioButton) v).isChecked()) {
                     getEditor(getActivity()).putInt(Constants.PREF_NOTIFICATIONS,
                             Constants.PREF_VAL_NOTIFICATIONS_NONE).commit();
                 }
                 break;
+
             case R.id.prefSoundOnAgentStart:
                 setChecked(v.getId(), getChecked(v.getId()));
                 PrefsHelper.setPrefBool(getActivity(), Constants.PREF_SOUND_ON_AGENT_START, getChecked(v.getId()));
                 break;
+
             case R.id.prefPushNotification:
                 if(getChecked(v.getId())) {
                     AlertDialogUtility.showDialog(getActivity(),
@@ -169,6 +180,10 @@ public class AppPreferencesFragment extends Fragment {
                     PrefsHelper.setPrefBool(getActivity(), Constants.PREF_PUSH_NOTIFICATION, false);
                 }
                 break;
+
+            //rohan's code...
+            //this is commented for the japanese version of code....
+            /*
             case R.id.prefAnalytics:
                 setChecked(v.getId(), getChecked(v.getId()));
                 if (!getChecked(v.getId())) {
@@ -181,11 +196,18 @@ public class AppPreferencesFragment extends Fragment {
                 setChecked(v.getId(), getChecked(v.getId()));
                 PrefsHelper.setPrefBool(getActivity(), Constants.PREF_ZIP_DEBUG_FILE, getChecked(v.getId()));
                 break;
+
+                */
+
             case R.id.prefPreserveSettingsOnAgentUninstall:
                 setChecked(v.getId(), getChecked(v.getId()));
                 PrefsHelper.setPrefBool(getActivity(), Constants.PREF_PRESERVE_SETTINGS_AGENT_UNINSTALL, getChecked(v.getId()));
                 AgentPrefDumper.dumpAgentPrefs(getActivity());
                 break;
+
+            //rohan's code...
+            //this code is commented for the japanese version of code...
+            /*
             case R.id.prefDebugViewContainer:
                 DebugFileUtils.viewDebugLog(getActivity());
                 break;
@@ -201,9 +223,11 @@ public class AppPreferencesFragment extends Fragment {
                         })
                         .setNegativeButton(android.R.string.no, null).show();
                 break;
+                */
+
+
             case R.id.showWelcomeButton:
-                SharedPreferences prefs = PreferenceManager
-                        .getDefaultSharedPreferences(getActivity().getApplicationContext());
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
                 SharedPreferences.Editor editor = prefs.edit();
                 editor.remove(Constants.PREF_WELCOME_ACTIVITY_SEEN);
                 editor.commit();
@@ -213,13 +237,17 @@ public class AppPreferencesFragment extends Fragment {
                 startActivity(intent);
                 break;
 
+            //this block is for displaying the issues about the application
             case R.id.showIssuesButton:
                 intent = new Intent(getActivity(), AppIssueActivity.class);
                 startActivity(intent);
                 break;
+
+
             case R.id.showAboutButton:
                 showAboutDialog();
                 break;
+
             case R.id.showPrivacyPolicyButton:
                 AlertDialogUtility.showDialog(getActivity(), getString(R.string.external_link_dialog_title), getString(R.string.external_link_dialog_message), getString(R.string.label_yes), getString(R.string.label_no), new AlertDialogUtility.AlertDialogClickListner() {
                     @Override
@@ -238,25 +266,36 @@ public class AppPreferencesFragment extends Fragment {
     }
 
     private void loadSettings() {
-        setChecked(
-                R.id.prefAnalytics,
-                getPrefs(getActivity()).getBoolean(
-                        Constants.PREF_USE_ANALYTICS, true));
+
+        //rohan's code...
+        //the code is commented for the japanese version of code....
+        /*
+        setChecked(R.id.prefAnalytics, getPrefs(getActivity()).getBoolean(Constants.PREF_USE_ANALYTICS, true));
+        */
 
         setChecked(R.id.prefSoundOnAgentStart, PrefsHelper.getPrefBool(getActivity(), Constants.PREF_SOUND_ON_AGENT_START, false));
         setChecked(R.id.prefPushNotification, PrefsHelper.getPrefBool(getActivity(), Constants.PREF_PUSH_NOTIFICATION, false));
+
+        //rohan's code...
+        //the code is commented for the japanese version of code...
+        /*
         setChecked(R.id.prefZipDebugFile, PrefsHelper.getPrefBool(getActivity(), Constants.PREF_ZIP_DEBUG_FILE, true));
+        */
+
         setChecked(R.id.prefPreserveSettingsOnAgentUninstall,
                 PrefsHelper.getPrefBool(getActivity(), Constants.PREF_PRESERVE_SETTINGS_AGENT_UNINSTALL, false));
         int n = getPrefs(getActivity()).getInt(Constants.PREF_NOTIFICATIONS,
                 Constants.PREF_VAL_NOTIFICATIONS_ONE);
         switch (n) {
+
             case Constants.PREF_VAL_NOTIFICATIONS_ONE:
                 mNotificationRadioOne.setChecked(true);
                 break;
+
             // case Constants.PREF_VAL_NOTIFICATIONS_ALL:
             // mNotificationRadioAll.setChecked(true);
             // break;
+
             case Constants.PREF_VAL_NOTIFICATIONS_NONE:
                 mNotificationRadioNone.setChecked(true);
                 break;
@@ -268,8 +307,14 @@ public class AppPreferencesFragment extends Fragment {
                 R.layout.about_dialog, null, false);
 
         TextView heading = (TextView) view.findViewById(R.id.aboutTextHeading);
-        heading.setText(String
-                .format("Agent\nVersion: %s", getPackageVersion()));
+
+        //rohan's code...
+        //this code is for the japanes version of this application...
+        //heading.setText(String.format("Agent\nVersion: %s", getPackageVersion()));
+        //heading.setText(String.format("スマ執事\nVersion: %s", getPackageVersion()));
+
+        heading.setText(String.format(getString(R.string.aboutTitle_agent)+"\nVersion: %s", getPackageVersion()));
+
 
         TextView aboutTextView = (TextView) view.findViewById(R.id.aboutText);
         aboutTextView.setText(Constants.ABOUT_TEXT);

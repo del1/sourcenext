@@ -27,6 +27,7 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.mobiroo.n.sourcenextcorporation.agent.widget.CustomViewPager;
 import com.mobiroo.n.sourcenextcorporation.tagstand.util.Logger;
 import com.mobiroo.n.sourcenextcorporation.agent.fragment.AgentInfoFragment;
 import com.mobiroo.n.sourcenextcorporation.agent.fragment.ConfigureAgentFragment;
@@ -67,7 +68,7 @@ public class AgentConfigurationActivity extends FragmentActivity {
 
 	protected LinearLayout mContainer;
 
-	protected ViewPager mViewPager;
+	protected CustomViewPager mViewPager;
 
 	protected String mAgentGuid;
     protected String mFromNotif;
@@ -167,7 +168,7 @@ public class AgentConfigurationActivity extends FragmentActivity {
 
 		mContainer.addView(mConfigMenu, 0);
 
-		mViewPager = (ViewPager) findViewById(R.id.agent_configuration_pager);
+		mViewPager = (CustomViewPager) findViewById(R.id.agent_configuration_pager);
 
 		mViewPager.setOnPageChangeListener(new OnPageChangeListener() {
 			@Override

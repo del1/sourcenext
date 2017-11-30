@@ -11,10 +11,10 @@ public class Constants {
     public static final String PREFS_NAME = "AgentPrefs";
     
     public static final String FEEDBACK_EMAIL_ADDRESS = "help@coleridgeapps.com";
-    public static final String ABOUT_TEXT = "© 2016 Coleridge Apps.\nMore Info: http://tryagent.com";
+    public static final String ABOUT_TEXT = "© 2016 Coleridge Apps.";
 
     public static final String STRING_SPLIT = "##";
-    
+
     // preference names
     public static final String PREF_DEBUGGING = "prefDebug";
     public static final String PREF_LAST_GROUP = "prefLastReportGroup";

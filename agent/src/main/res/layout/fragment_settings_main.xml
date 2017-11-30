@@ -92,6 +92,7 @@
 
         <!-- DEBUGGING SECTION -->
 
+        <!-- we are commenting the debug section for the japanese verion of code...
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -175,6 +176,8 @@
                 android:text="@string/layoutPreferencesZipDebugFile" />
 
         </LinearLayout>
+
+        the debug block ends here... -->
 
         <!-- OTHER SECTION -->
 

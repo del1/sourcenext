@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">エージェント</string>
+    <string name="app_name">スマ執事</string>
     <string name="accounts_description">カレンダーを選択して、イベントを監視します。少なくとも1つは選択する必要があります。</string>
     <string name="action_settings">設定</string>
     <string name="address">住所</string>
@@ -529,4 +529,6 @@
     <string name="yes_recommended">はい（推奨）</string>
     <string name="set_later">後で設定する</string>
     <string name="do_not_display">もう一度表示しない</string>
+    <string name="config_silence_phone">無音モードで通知する</string>
+    <string name="aboutTitle_agent">スマ執事</string>
 </resources>

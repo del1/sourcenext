@@ -99,9 +99,9 @@ public class AgentCheckboxSetting extends AgentUIElement  {
                         "Roboto-Light.ttf");
 
         if (getName() != -1) {
-            ((TextView) checkboxSettingView.findViewById(R.id.name)).setText(String.valueOf(getName()));
+            ((TextView) checkboxSettingView.findViewById(R.id.name)).setText(getName());//String.valueOf(getName()) //rohans
         } else if (getNameString() != null) {
-            ((TextView) checkboxSettingView.findViewById(R.id.name)).setText(String.valueOf(getNameString()));
+            ((TextView) checkboxSettingView.findViewById(R.id.name)).setText(getNameString());//String.valueOf(getNameString()) //rohans
         }
 
         ((TextView) checkboxSettingView.findViewById(R.id.name)).setTypeface(font);

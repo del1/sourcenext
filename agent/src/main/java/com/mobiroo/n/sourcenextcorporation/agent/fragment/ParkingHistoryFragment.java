@@ -205,7 +205,7 @@ public class ParkingHistoryFragment extends Fragment {
 							mMap.getUiSettings().setZoomControlsEnabled(true);
 
 							// disable map interaction
-							mMap.getUiSettings().setScrollGesturesEnabled(false);
+							mMap.getUiSettings().setScrollGesturesEnabled(true);
 							mMap.getUiSettings().setZoomGesturesEnabled(false);
 							mMap.getUiSettings().setRotateGesturesEnabled(false);
 							mMap.getUiSettings().setMyLocationButtonEnabled(false);

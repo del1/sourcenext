@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="agent">Agent</string>
+    <string name="agent">Small butler</string>
     <string name="agent_dashclock_description">Displays which agents are running at all times.</string>
     <string name="accounts_description">Choose the calendars for Meeting Agent to monitor for events.  You must select at least one.</string>
     <string name="agent_action_delay">Delay</string>
@@ -240,7 +240,7 @@
     <string name="delay_service_name">Delay Service</string>
     <string name="show_about">About Agent</string>
     <string name="privacy_policy">Privacy Policy</string>
-    <string name="show_welcome" translatable="false">Show welcome screen</string>
+    <string name="show_welcome" translatable="true">Show welcome screen</string>
     <string name="show_issues">Show diagnostic screen</string>
     <string name="sleep_agent_activate_on_inactivity">Wait for inactivity</string>
     <string name="sleep_agent_inactivity_time">Wait for (approximately):</string>
@@ -520,12 +520,12 @@
     <string name="click_to_purchase">Click here to purchase application.</string>
     <string name="trial_expired_ticker">Your trial has expired.</string>
     <string name="trial_expired_message">The trial period for Agent has ended.  To continue using Agent you\'ll need to upgrade.</string>
-    
+
     <string name="modify_system_settings_info">For Battery agent to work properly, please grant Agent capability to modify system settings. Without this capability all functionality might not work.</string>
 
     <string name="notification_title">Agent needs permission to work properly</string>
     <string name="notification_message">For Agent app to completely silence your phone and auto start driving mode, Agent need access to some permissions. Click on the notification or open the apps to give Agent app the required permissions</string>
-    
+
     <string name="external_link_dialog_title">Connection to external site</string>
     <string name="external_link_dialog_message">App Pass Connect to the outside site. Is it OK?</string>
     <string name="label_yes">Yes</string>
@@ -546,4 +546,7 @@
     <string name="support">Support</string>
     <string name="will_not_support">I will not support you</string>
     <string name="do_not_display_rate_dialog">Do not display next time</string>
+    <string name="config_silence_phone">Notify in silence mode</string>
+    <string name="aboutTitle_agent">agent</string>
+
 </resources>
