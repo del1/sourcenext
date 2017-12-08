@@ -548,5 +548,6 @@
     <string name="do_not_display_rate_dialog">Do not display next time</string>
     <string name="config_silence_phone">Notify in silence mode</string>
     <string name="aboutTitle_agent">agent</string>
+    <string name="parking_map_notification">Please wait for few seconds, While location being updated</string>
 
 </resources>

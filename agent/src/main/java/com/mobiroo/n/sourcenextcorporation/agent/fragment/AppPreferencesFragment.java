@@ -70,7 +70,7 @@ public class AppPreferencesFragment extends Fragment {
         attachOnClick(R.id.prefSoundOnAgentStart, mSettingsView);
         attachOnClick(R.id.prefPushNotification, mSettingsView);
         attachOnClick(R.id.showWelcomeButton, mSettingsView);
-        attachOnClick(R.id.showIssuesButton, mSettingsView);
+        //attachOnClick(R.id.showIssuesButton, mSettingsView);
         attachOnClick(R.id.showAboutButton, mSettingsView);
         attachOnClick(R.id.showPrivacyPolicyButton, mSettingsView);
 
@@ -238,10 +238,12 @@ public class AppPreferencesFragment extends Fragment {
                 break;
 
             //this block is for displaying the issues about the application
+            /*rohans code this is not available for the japanese version of code...
             case R.id.showIssuesButton:
                 intent = new Intent(getActivity(), AppIssueActivity.class);
                 startActivity(intent);
                 break;
+                */
 
 
             case R.id.showAboutButton:
@@ -344,5 +346,4 @@ public class AppPreferencesFragment extends Fragment {
             startActivity(intent);
         }
     }
-
 }

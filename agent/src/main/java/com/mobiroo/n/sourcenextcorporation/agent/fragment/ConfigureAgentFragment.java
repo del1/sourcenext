@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.mobiroo.n.sourcenextcorporation.tagstand.util.Logger;
 import com.mobiroo.n.sourcenextcorporation.agent.item.AgentFactory;
@@ -52,7 +53,7 @@ public class ConfigureAgentFragment extends Fragment {
 
 	AgentStateListener mAgentStateListener;
 
-    protected AgentTaskCollection mTaskCollection;
+	protected AgentTaskCollection mTaskCollection;
 	protected boolean mMoreShown;
 
 	public void addAgentStateListener(AgentStateListener agentStateListener) {
@@ -69,7 +70,7 @@ public class ConfigureAgentFragment extends Fragment {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-        mTaskCollection.cancelTasks();
+		mTaskCollection.cancelTasks();
 	}
 
 	public class ConfigureAgentFragmentWrapper implements
@@ -81,7 +82,7 @@ public class ConfigureAgentFragment extends Fragment {
 		}
 
 		public void updateSetting(String prefName, String prefVal,
-				Runnable onPostRunnable) {
+								  Runnable onPostRunnable) {
 			new UpdateSettingTask(getActivity(), prefName, prefVal,
 					onPostRunnable).execute();
 		}
@@ -91,43 +92,43 @@ public class ConfigureAgentFragment extends Fragment {
 					.execute();
 		}
 
-        public void updateSetting(String agentName, String prefName, String prefVal) {
-            Logger.i("prop data for " + agentName);
-            new UpdateSettingTask(getActivity(), null, agentName, prefName, prefVal)
-                    .execute();
-        }
+		public void updateSetting(String agentName, String prefName, String prefVal) {
+			Logger.i("prop data for " + agentName);
+			new UpdateSettingTask(getActivity(), null, agentName, prefName, prefVal)
+					.execute();
+		}
 
 		public void updateSetting(String prefName, String prefVal) {
-            if(isAdded()) {
-                ProgressDialog dialog = ProgressDialog.show(this.getActivity(), "",
-                        getString(R.string.agent_updating_settings), true);
+			if(isAdded()) {
+				ProgressDialog dialog = ProgressDialog.show(this.getActivity(), "",
+						getString(R.string.agent_updating_settings), true);
 
-                dialog.setIndeterminateDrawable(
-                        getResources().getDrawable(R.drawable.agent_animation_agent));
+				dialog.setIndeterminateDrawable(
+						getResources().getDrawable(R.drawable.agent_animation_agent));
 
-                new UpdateSettingTask(getActivity(), dialog, prefName, prefVal).execute();
-            }
+				new UpdateSettingTask(getActivity(), dialog, prefName, prefVal).execute();
+			}
 		}
 
 		@Override
 		public void startUpdateSettingActivityForResult(Intent intent,
-				int resultCode) {
+														int resultCode) {
 			ConfigureAgentFragment.this.startActivityForResult(intent,
 					resultCode);
 		}
 
 	}
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 
-        mTaskCollection = new AgentTaskCollection();
-    }
+		mTaskCollection = new AgentTaskCollection();
+	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+							 Bundle savedInstanceState) {
 
 		Bundle args = getArguments();
 		mAgentGuid = args.getString(AGENT_GUID);
@@ -144,13 +145,15 @@ public class ConfigureAgentFragment extends Fragment {
 		Agent agent = AgentFactory.getAgentFromGuid(
 				getActivity(), mAgentGuid);
 
+		//getting all the views dynamically in mConent variable...
 		mContent = inflater.inflate(R.layout.fragment_agent_config, null);
 
-        if(Utils.isMarshmallowOrUp() && isMeetingAgent()) {
-            checkPermissions(inflater, mContent);
-        } else {
-            generateSettings(inflater, mContent);
-        }
+		//generating the setting in the else block...
+		if(Utils.isMarshmallowOrUp() && isMeetingAgent()) {
+			checkPermissions(inflater, mContent);
+		} else {
+			generateSettings(inflater, mContent);
+		}
 
 		// one time ui actions below
 		mAdvancedConfigItems = ((LinearLayout) mContent
@@ -158,63 +161,68 @@ public class ConfigureAgentFragment extends Fragment {
 		mMoreSettingsButtonContainer = (LinearLayout) mContent
 				.findViewById(R.id.more_settings_button_container);
 
+		//on clicking the button the settings/configuration tab gets maximized down...
 		mContent.findViewById(R.id.more_settings_text).setOnClickListener(
 				new OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						mMoreShown = true;
-                        Usage.logEvent(getActivity(), Usage.Events.MORE_SETTINGS_CLICKED, true,
-                                new Usage.EventProperty(Usage.Properties.AGENT_NAME, mAgentGuid));
-                        FadeAnimation.crossfade(mAdvancedConfigItems,
+						Usage.logEvent(getActivity(), Usage.Events.MORE_SETTINGS_CLICKED, true,
+								new Usage.EventProperty(Usage.Properties.AGENT_NAME, mAgentGuid));
+						FadeAnimation.crossfade(mAdvancedConfigItems,
 								mMoreSettingsButtonContainer, 1000);
 					}
 				});
 
 		mContent.findViewById(R.id.reset_text).setOnClickListener(
-                new OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+				new OnClickListener() {
+					@Override
+					public void onClick(View v) {
 
-                        new AlertDialog.Builder(getActivity())
-                                .setIcon(R.drawable.ic_launcher)
-                                .setTitle(R.string.agent_uninstall_confirm)
-                                .setMessage(R.string.agent_confirm_reset_hal)
-                                .setPositiveButton(R.string.yes,
-                                        new DialogInterface.OnClickListener() {
-                                            @Override
-                                            public void onClick(DialogInterface dialog,
-                                                                int which) {
-                                                ProgressDialog pd = ProgressDialog.show(getActivity(), "",
-                                                        getString(R.string.agent_updating_settings), true);
-                                                pd.setIndeterminateDrawable(getResources().getDrawable(
-                                                        R.drawable.agent_animation_agent));
-                                                new ResetSettingsTask(getActivity(), pd)
-                                                        .execute();
-                                            }
-                                 })
-                                .setNegativeButton(R.string.no, null)
-                                .show();
+						new AlertDialog.Builder(getActivity())
+								.setIcon(R.drawable.ic_launcher)
+								.setTitle(R.string.agent_uninstall_confirm)
+								.setMessage(R.string.agent_confirm_reset_hal)
+								.setPositiveButton(R.string.yes,
+										new DialogInterface.OnClickListener() {
+											@Override
+											public void onClick(DialogInterface dialog,
+																int which) {
+												ProgressDialog pd = ProgressDialog.show(getActivity(), "",
+														getString(R.string.agent_updating_settings), true);
+												pd.setIndeterminateDrawable(getResources().getDrawable(
+														R.drawable.agent_animation_agent));
+												new ResetSettingsTask(getActivity(), pd)
+														.execute();
+											}
+										})
+								.setNegativeButton(R.string.no, null)
+								.show();
 
-                    }
-                });
+					}
+				});
 
-        if (mMoreShown) {
+		//more settings button is clicked and more settings are shown...
+		if (mMoreShown) {
 			mAdvancedConfigItems.setVisibility(View.VISIBLE);
 			mMoreSettingsButtonContainer.setVisibility(View.GONE);
 		}
 
+
+		//if the agent is disabled or uninstalled the setting cannot be changed...
 		mBlocker = (LinearLayout) View.inflate(getActivity(),
 				R.layout.fragment_agent_config_blocker, null);
 		mBlockerText = (TextView) mBlocker.findViewById(R.id.blocker_text);
 		((FrameLayout) mContent.findViewById(R.id.config_frame))
 				.addView(mBlocker);
 
+		//the agent is enabled...
 		if (agent.isInstalled()) {
 			if (agent.isActive() && (!agent.isPaused())) {
 				mBlocker.setVisibility(View.VISIBLE);
 				mBlockerText.setText(R.string.agent_config_blocker_started);
 
-            } else {
+			} else {
 				mBlocker.setVisibility(View.GONE);
 			}
 		} else {
@@ -225,95 +233,98 @@ public class ConfigureAgentFragment extends Fragment {
 		return mContent;
 	}
 
-    private boolean isMeetingAgent() {
-        return mAgentGuid != null && mAgentGuid.equals(MeetingAgent.HARDCODED_GUID);
-    }
+	private boolean isMeetingAgent() {
+		return mAgentGuid != null && mAgentGuid.equals(MeetingAgent.HARDCODED_GUID);
+	}
 
-    private void checkPermissions(LayoutInflater inflater, View contentView) {
+	private void checkPermissions(LayoutInflater inflater, View contentView) {
 
-        List<String> requiredPermissions = Utils.getRequiredPermissions(getActivity(), new String[] {
-                Manifest.permission.READ_CALENDAR, Manifest.permission.GET_ACCOUNTS
-        });
+		List<String> requiredPermissions = Utils.getRequiredPermissions(getActivity(), new String[] {
+				Manifest.permission.READ_CALENDAR, Manifest.permission.GET_ACCOUNTS
+		});
 
-        if (requiredPermissions.isEmpty()) {
-            generateSettings(inflater, contentView);
-        } else {
-            Utils.requestPermissions(getActivity(),
-                    requiredPermissions.toArray(new String[requiredPermissions.size()]),
-                    Constants.PERMISSIONS_REQUEST_MEETING);
-        }
-    }
+		if (requiredPermissions.isEmpty()) {
+			generateSettings(inflater, contentView);
+		} else {
+			Utils.requestPermissions(getActivity(),
+					requiredPermissions.toArray(new String[requiredPermissions.size()]),
+					Constants.PERMISSIONS_REQUEST_MEETING);
+		}
+	}
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
-            @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+	@Override
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+										   @NonNull int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        switch (requestCode) {
-            case Constants.PERMISSIONS_REQUEST_MEETING:
-                generateSettings(LayoutInflater.from(getActivity()), mContent);
-                break;
-        }
-    }
+		switch (requestCode) {
+			case Constants.PERMISSIONS_REQUEST_MEETING:
+				generateSettings(LayoutInflater.from(getActivity()), mContent);
+				break;
+		}
+	}
 
-    // for repeated ui settings
+	// for repeated ui settings
 	protected void generateSettings(LayoutInflater inflater, View contentView) {
-		final Agent agent = AgentFactory.getAgentFromGuid(
-				getActivity(), mAgentGuid);
 
-			AgentUIElement elements[] = agent.getSettings(new ConfigureAgentFragmentWrapper());
+		final Agent agent = AgentFactory.getAgentFromGuid(getActivity(), mAgentGuid);
 
-			boolean advanced = false;
-			LinearLayout configItems;
-			final LinearLayout advancedConfigItems;
-			final LinearLayout advancedConfigItemsContainer;
-			configItems = ((LinearLayout) contentView
-					.findViewById(R.id.configuration_items));
-			// if present, blow away old config items
-			configItems.removeAllViews();
+		//elements array contains the list of setting elements...
+		AgentUIElement elements[] = agent.getSettings(new ConfigureAgentFragmentWrapper());
 
-			advancedConfigItems = ((LinearLayout) contentView
-					.findViewById(R.id.advanced_configuration_items));
-			// if present, blow away old advanced config items
-			advancedConfigItems.removeAllViews();
+		boolean advanced = false;
+		LinearLayout configItems;
+		final LinearLayout advancedConfigItems;
+		final LinearLayout advancedConfigItemsContainer;
+
+		configItems = ((LinearLayout) contentView
+				.findViewById(R.id.configuration_items));
+		// if present, blow away old config items
+		configItems.removeAllViews();
+
+		advancedConfigItems = ((LinearLayout) contentView
+				.findViewById(R.id.advanced_configuration_items));
+		// if present, blow away old advanced config items
+		advancedConfigItems.removeAllViews();
 
 
-			advancedConfigItemsContainer = ((LinearLayout) contentView
-					.findViewById(R.id.advanced_configuration_items_wrapper));
+		advancedConfigItemsContainer = ((LinearLayout) contentView
+				.findViewById(R.id.advanced_configuration_items_wrapper));
 
-			if (elements != null) {
-				for (AgentUIElement element : elements) {
-					if (element == null) {
-						advanced = true;
-					} else {
-						if (advanced) {
-							advancedConfigItems.addView(element
-									.getView(getActivity()));
-						} else {
-							configItems.addView(element.getView(getActivity()));
-						}
+		if (elements != null) {
+			for (AgentUIElement element : elements) {
+				if (element == null) {
+					advanced = true;
+				} else {
+					if (advanced) {
+						advancedConfigItems.addView(element.getView(getActivity()));
+					}
+					//if the element are not null then else block is executed...
+					else {
+						configItems.addView(element.getView(getActivity()));
 					}
 				}
 			}
+		}
 
-			advancedConfigItemsContainer.setVisibility(View.GONE);
+		advancedConfigItemsContainer.setVisibility(View.GONE);
 
-			if (!advanced) {
-				// no advanced items; hide more settings button
-				FrameLayout moreSettings = ((FrameLayout) contentView.findViewById(R.id.more_more_settings_frame));
-				moreSettings.setVisibility(View.GONE);
+		if (!advanced) {
+			// no advanced items; hide more settings button
+			FrameLayout moreSettings = ((FrameLayout) contentView.findViewById(R.id.more_more_settings_frame));
+			moreSettings.setVisibility(View.GONE);
+		}
+
+		mActivityResultLookup = new SparseArray<SettingSaver>();
+
+		for (int i = 0; i < elements.length; i++) {
+			if ((elements[i] != null)
+					&& (elements[i].getActivityResultKey() != 0)) {
+				mActivityResultLookup.put(
+						elements[i].getActivityResultKey(),
+						(SettingSaver) elements[i]);
 			}
-
-			mActivityResultLookup = new SparseArray<SettingSaver>();
-
-			for (int i = 0; i < elements.length; i++) {
-				if ((elements[i] != null)
-						&& (elements[i].getActivityResultKey() != 0)) {
-					mActivityResultLookup.put(
-							elements[i].getActivityResultKey(),
-							(SettingSaver) elements[i]);
-				}
-			}
+		}
 
 	}
 
@@ -387,7 +398,7 @@ public class ConfigureAgentFragment extends Fragment {
 				return;
 			}
 
-            mTaskCollection.completeTask(this);
+			mTaskCollection.completeTask(this);
 
 			mMoreShown = false;
 			mMoreSettingsButtonContainer.setAlpha(1f);
@@ -409,21 +420,21 @@ public class ConfigureAgentFragment extends Fragment {
 		protected String mPrefName;
 		protected String mPrefVal;
 		protected Runnable mOnPostRunnable;
-        protected String mUpdateAgentGuid;
+		protected String mUpdateAgentGuid;
 
-        public UpdateSettingTask(Context context, ProgressDialog dialog, String agentGuid,
-                                 String prefName, String prefVal) {
-            mUpdateAgentGuid = agentGuid;
-            mContext = context;
-            mOnPostRunnable = null;
-            mDialog = dialog;
-            mPrefName = prefName;
-            mPrefVal = prefVal;
-        }
+		public UpdateSettingTask(Context context, ProgressDialog dialog, String agentGuid,
+								 String prefName, String prefVal) {
+			mUpdateAgentGuid = agentGuid;
+			mContext = context;
+			mOnPostRunnable = null;
+			mDialog = dialog;
+			mPrefName = prefName;
+			mPrefVal = prefVal;
+		}
 
 		public UpdateSettingTask(Context context, ProgressDialog dialog,
-				String prefName, String prefVal) {
-            mUpdateAgentGuid = mAgentGuid;
+								 String prefName, String prefVal) {
+			mUpdateAgentGuid = mAgentGuid;
 			mContext = context;
 			mOnPostRunnable = null;
 			mDialog = dialog;
@@ -432,8 +443,8 @@ public class ConfigureAgentFragment extends Fragment {
 		}
 
 		public UpdateSettingTask(Context context, String prefName,
-				String prefVal, Runnable onPostRunnable) {
-            mUpdateAgentGuid = mAgentGuid;
+								 String prefVal, Runnable onPostRunnable) {
+			mUpdateAgentGuid = mAgentGuid;
 			mContext = context;
 			mOnPostRunnable = onPostRunnable;
 			mDialog = null;
@@ -468,15 +479,15 @@ public class ConfigureAgentFragment extends Fragment {
 				}
 
 				Usage.logEvent(
-                        mContext,
-                        Usage.Events.CHANGE_AGENT_SETTINGS,
-                        true,
-                        new Usage.EventProperty(Usage.Properties.AGENT_NAME,
-                                mAgentGuid),
-                        new Usage.EventProperty(
-                                Usage.Properties.SETTING_NAME, prefNameAdjusted),
-                        new Usage.EventProperty(
-                                Usage.Properties.SETTING_VALUE, prefValAdjusted));
+						mContext,
+						Usage.Events.CHANGE_AGENT_SETTINGS,
+						true,
+						new Usage.EventProperty(Usage.Properties.AGENT_NAME,
+								mAgentGuid),
+						new Usage.EventProperty(
+								Usage.Properties.SETTING_NAME, prefNameAdjusted),
+						new Usage.EventProperty(
+								Usage.Properties.SETTING_VALUE, prefValAdjusted));
 
 				if (mDialog != null) {
 					Thread.sleep(400); // so people can see dialog
@@ -501,7 +512,7 @@ public class ConfigureAgentFragment extends Fragment {
 				return;
 			}
 
-            Logger.d("Async UpdateSetting finished for " + mPrefName + " to " + mPrefVal);
+			Logger.d("Async UpdateSetting finished for " + mPrefName + " to " + mPrefVal);
 
 			if (mDialog != null) {
 				mDialog.dismiss();
@@ -534,14 +545,14 @@ public class ConfigureAgentFragment extends Fragment {
 			mBlockerText.setText(R.string.agent_config_blocker_disabled);
 
 
-            mBlockerText.setOnClickListener(null);
-            mBlockerText.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Agent agent = AgentFactory.getAgentFromGuid(getActivity(), mAgentGuid);
-                    agent.install(getActivity(), false, false);
-                }
-            });
+			mBlockerText.setOnClickListener(null);
+			mBlockerText.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View view) {
+					Agent agent = AgentFactory.getAgentFromGuid(getActivity(), mAgentGuid);
+					agent.install(getActivity(), false, false);
+				}
+			});
 
 			mAdvancedConfigItems.setVisibility(View.GONE);
 			mMoreSettingsButtonContainer.setVisibility(View.VISIBLE);
@@ -566,14 +577,14 @@ public class ConfigureAgentFragment extends Fragment {
 			mBlocker.setVisibility(View.VISIBLE);
 			mBlockerText.setText(R.string.agent_config_blocker_started);
 
-            mBlockerText.setOnClickListener(null);
-            mBlockerText.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Agent agent = AgentFactory.getAgentFromGuid(getActivity(), mAgentGuid);
-                    agent.pause(getActivity());
-                }
-            });
+			mBlockerText.setOnClickListener(null);
+			mBlockerText.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View view) {
+					Agent agent = AgentFactory.getAgentFromGuid(getActivity(), mAgentGuid);
+					agent.pause(getActivity());
+				}
+			});
 		}
 
 		@Override

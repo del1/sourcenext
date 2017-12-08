@@ -16,7 +16,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="#ccc"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/configuration_items"
@@ -34,6 +36,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="#ccc"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

@@ -17,13 +17,14 @@
     <string name="agent_activated_meeting_name">会議： %s</string>
     <string name="agent_activated_meeting_name_unknown">会議があります。管理を開始しました。</string>
     <string name="agent_activity_blocker_disabled">この機能は一度も有効化されていません。ON / OFFスイッチを使用して有効にします。</string>
-    <string name="agent_config_blocker_disabled">スマ執事が無効の場合、設定は許可されません。\\n \\n 設定を変更するには、メニューバーのON / OFFスイッチを使用してスマ執事を有効にします。</string>
-    <string name="agent_config_blocker_started">スマ執事実行中は、設定できません。\\n\\n設定を変更するには、ステータスバーからスマ執事を停止してください。</string>
+    <!--string name="agent_config_blocker_disabled">スマ執事が無効の場合、設定は許可されません。\n \n 設定を変更するには、メニューバーのON / OFFスイッチを使用してスマ執事を有効にします。</string-->
+    <string name="agent_config_blocker_disabled">スマ執事が無効の場合、設定は許可されません。\n\n設定を変更するには、メニューバーのON / OFFスイッチを使用してスマ執事を有効にします。</string>
+    <string name="agent_config_blocker_started">スマ執事実行中は、設定できません。\n\n設定を変更するには、ステータスバーからスマ執事を停止してください。</string>
     <string name="agent_confirm">確認</string>
     <string name="agent_confirm_manual_start">手動で開始しますか？</string>
     <string name="agent_confirm_manual_stop">スマ執事を停止しますか？</string>
     <string name="agent_confirm_manual_unpause">この機能を再起動しますか？</string>
-    <string name="agent_confirm_reset_hal">よろしいですか？\\n\\n\\\"\"\\n</string>
+    <string name="agent_confirm_reset_hal">よろしいですか？\n</string>
     <string name="agent_confirm_sure">よろしいですか？</string>
     <string name="agent_contact_val_anyone">誰でも</string>
     <string name="agent_contact_val_custom">編集</string>
@@ -32,7 +33,7 @@
     <string name="agent_contact_val_strangers_only">登録外のみ</string>
     <string name="agent_dashclock_description">実行中の機能を表示する</string>
     <string name="agent_deactivated">%1$s スマ執事を終了しました</string>
-    <string name="agent_delayed_message_meeting">スマ執事(会議)は開始待ちです</string>
+    <string name="agent_delayed_message_meeting">スマ執事(会議中)は開始待ちです</string>
     <string name="agent_delayed_message_sleep">スマ執事(睡眠)は開始待ちです</string>
     <string name="agent_delayed_title_meeting">スマ執事(睡眠)を遅延</string>
     <string name="agent_delayed_title_sleep">スマ執事(睡眠)を遅延</string>
@@ -58,13 +59,13 @@
     <string name="agent_started_parking_manual">駐車場情報を保存します。約12秒かかります</string>
     <string name="agent_started_sleep_agent">スマ執事が起動しました。おやすみなさい！</string>
     <string name="agent_started_title_battery">バッテリーが低下しています</string>
-    <string name="agent_started_title_battery_manual">スマ執事を開始しました(電池管理)</string>
+    <string name="agent_started_title_battery_manual">スマ執事を開始しました(電池)</string>
     <string name="agent_started_title_drive">運転中</string>
     <string name="agent_started_title_drive_manual">会議があります</string>
     <string name="agent_started_title_meeting">会議があります</string>
-    <string name="agent_started_title_meeting_manual">スマ執事を開始しました(会議管理)</string>
+    <string name="agent_started_title_meeting_manual">スマ執事を開始しました(会議中)</string>
     <string name="agent_started_title_sleep">おやすみの時間です</string>
-    <string name="agent_started_title_sleep_manual">スマ執事を開始しました(睡眠管理)</string>
+    <string name="agent_started_title_sleep_manual">スマ執事を開始しました(睡眠)</string>
     <string name="agent_status_activated">開始しました</string>
     <string name="agent_status_bar_disabled">無効な操作です</string>
     <string name="agent_status_bar_enabled_battery_agent">バッテリーが少なくなると開始します</string>
@@ -73,20 +74,20 @@
     <string name="agent_status_bar_enabled_parking_agent">停車待ちです</string>
     <string name="agent_status_bar_enabled_sleep_agent">次回の睡眠から有効です</string>
     <string name="agent_status_bar_enabled_status_agent">友達の様子を見る</string>
-    <string name="agent_status_bar_paused_meeting_agent">会議中のため停止しました。クリックすると一時停止します。</string>
-    <string name="agent_status_bar_paused_sleep_agent">次回の睡眠まで待機します。クリックすると一時停止します。</string>
-    <string name="agent_status_bar_started">開始しました。クリックすると停止します</string>
-    <string name="agent_status_bar_started_battery_agent">バッテリー節約を開始します。クリックするとスキップします。</string>
-    <string name="agent_status_bar_started_drive_agent">開始しました。運転に集中できます。クリックするとスキップします。</string>
-    <string name="agent_status_bar_started_manual">手動で開始しました。停止するときはクリックしてください。</string>
-    <string name="agent_status_bar_started_meeting_agent">開始しました。スマートフォンの音はでません。クリックすると一時停止します。</string>
-    <string name="agent_status_bar_started_sleep_agent">開始しました。クリックすると一時停止します。</string>
+    <string name="agent_status_bar_paused_meeting_agent">会議中のため停止しました。タップすると一時停止します。</string>
+    <string name="agent_status_bar_paused_sleep_agent">次回の睡眠まで待機します。タップすると一時停止します。</string>
+    <string name="agent_status_bar_started">開始しました。タップすると停止します</string>
+    <string name="agent_status_bar_started_battery_agent">バッテリー節約を開始します。タップするとスキップします。</string>
+    <string name="agent_status_bar_started_drive_agent">開始しました。運転に集中できます。タップするとスキップします。</string>
+    <string name="agent_status_bar_started_manual">手動で開始しました。停止するときはタップしてください。</string>
+    <string name="agent_status_bar_started_meeting_agent">開始しました。スマートフォンの音はでません。タップすると一時停止します。</string>
+    <string name="agent_status_bar_started_sleep_agent">開始しました。タップすると一時停止します。</string>
     <string name="agent_status_idle">待機中</string>
     <string name="agent_status_installed">有効にする</string>
     <string name="agent_status_paused">一時停止</string>
     <string name="agent_uninstall_confirm">警告！</string>
-    <string name="agent_uninstall_confirm_warning">続行するとn\\n ・設定が失われます。\\n\\n・ 再設定するまで動作しません。\\n</string>
-    <string name="agent_uninstall_confirm_warning_nochange">続行すると再設定するまで動作しません。\\n</string>
+    <string name="agent_uninstall_confirm_warning">続行すると\n\n ・設定が失われます。\n\n ・再設定するまで動作しません。\n</string>
+    <string name="agent_uninstall_confirm_warning_nochange">続行すると再設定するまで動作しません。\n</string>
     <string name="agent_uninstalled">%1$s スマ執事は無効になっています。</string>
     <string name="agent_unpaused">%1$s スマ執事を手動で停止しました</string>
     <string name="agent_updated_text">(テキストを保存しました)</string>
@@ -107,7 +108,7 @@
     <string name="battery_agent_mobile_data_off">モバイル通信をOFFにする</string>
     <string name="battery_agent_no_start_screen_on">画面がONの場合起動しない</string>
     <string name="battery_agent_no_start_wifi">Wi-Fiを開始しない:</string>
-    <string name="battery_agent_wifi_explanation">指定されたWi-Fiに接続中の場合、スマ執事(バッテリー)は動作しません</string>
+    <string name="battery_agent_wifi_explanation">指定されたWi-Fiに接続中の場合、スマ執事(電池)は動作しません</string>
     <string name="battery_agent_percent_trigger">トリガーの割合設定</string>
     <string name="battery_agent_title">電池</string>
     <string name="battery_agent_trigger_bat">バッテリーが設定値以下を下回ると節電を開始します。</string>
@@ -126,7 +127,7 @@
     <string name="cc_strangers">未登録番号からの着信を許可する</string>
     <string name="config_allow_repeat">繰り返し着信を許可</string>
     <string name="config_allow_repeat_description_wake">本オプションを有効にすると、\"起こすことができる連絡先\"リストに含まれていない相手でも、前回の通話から5分以内であれば通話が可能になります。</string>
-    <string name="config_allow_repeat_description_through">本オプションをONにすると、\"連絡することができる連絡先\"リストに含まれていない相手でも、前回の通話から5分以内であれば通話が可能になります。</string>
+    <string name="config_allow_repeat_description_through">本オプションをONにすると、\"許可する連絡先\"一覧に含まれていない相手でも、前回の通話から5分以内であれば通話が可能になります。</string>
     <string name="config_auto_respond_phone">着信へ自動返信</string>
     <string name="config_auto_respond_text">テキストメッセージへ自動返信</string>
     <string name="config_busy_only">通話中のみ</string>
@@ -137,7 +138,7 @@
     <string name="config_drive_bt_network">Bluetooth 接続:</string>
     <string name="config_drive_bt_network_unspecified">指定無し</string>
     <string name="config_drive_bt_network_multiple">複数</string>
-    <string name="config_sleep_actions_battery_desc">スリープ中に節電する。スマ執事（睡眠）が動作中は上記のシステムを無効になり、解除後に有効へ戻します。</string>
+    <string name="config_sleep_actions_battery_desc">睡眠中に節電します。スマ執事（睡眠）が動作中は上記のシステムを無効にし、解除後に有効へ戻します。</string>
     <string name="config_percentage">(%1$s/100)</string>
     <string name="config_read_sms_aloud">メッセージを読み上げる</string>
     <string name="config_read_other_messages">SMS以外のメッセージ（WhatsAppなど）を読む</string>
@@ -146,16 +147,16 @@
     <string name="config__phone">マナーモードに設定</string>
     <string name="config_silence_volume">通知の設定</string>
     <string name="config_silence_off">バイブレーション</string>
-    <string name="config_silence_on">消音にしました</string>
+    <string name="config_silence_on">消音</string>
     <string name="config_start_only_when_charging">充電中のみ開始</string>
-    <string name="config_turn_off_bt">BluetoothをOFFにしました</string>
-    <string name="config_turn_off_mobile_data">モバイルデータをOFFにしました</string>
-    <string name="config_turn_off_syncing">同期を無効化しました</string>
-    <string name="config_turn_off_wifi">Wi-FiをOFFにしました</string>
+    <string name="config_turn_off_bt">BluetoothをOFF</string>
+    <string name="config_turn_off_mobile_data">モバイルデータをOFF</string>
+    <string name="config_turn_off_syncing">同期の無効化</string>
+    <string name="config_turn_off_wifi">Wi-FiをOFF</string>
     <string name="config_urgent_mode">重要度を確認するために、テキストを送信</string>
     <string name="config_urgent_verification">確認用メッセージ</string>
-    <string name="config_urgent_meeting_description">「重要度確認」機能は、\"連絡することができる連絡先\"一覧の相手へ自動でメッセージを送信します。相手が\"重要\"の文字を入れて返信した場合のみスマ執事（会議）が通知します。</string>
-    <string name="config_urgent_sleep_description">「重要度確認」機能は、\"起こすことができる連絡先\"一覧の相手へ移動でメッセージを送信します。相手が\"重要\"の文字を入れて返信した場合のみスマ執事（睡眠）が通知します。</string>
+    <string name="config_urgent_meeting_description">「重要度確認」機能は、\"許可する連絡先\"一覧の相手へ自動でメッセージを送信します。相手が\"緊急\"の文字を入れて返信した場合のみスマ執事（会議中）が通知します。</string>
+    <string name="config_urgent_sleep_description">「重要度確認」機能は、\"起こすことができる連絡先\"一覧の相手へ自動でメッセージを送信します。相手が\"緊急\"の文字を入れて返信した場合のみスマ執事（睡眠）が通知します。</string>
     <string name="config_use_activity_detection">動作検出を使う (β版)</string>
     <string name="config_wake_phone">電話で起こすことを許可</string>
     <string name="config_wake_sms">メッセージで起こすことを許可</string>
@@ -182,7 +183,7 @@
     <string name="drive_agent_reading">メッセージを読んでいます。</string>
     <string name="drive_agent_text">メッセージへ自動返信中</string>
     <string name="drive_agent_title">運転中</string>
-    <string name="drive_agent_trigger_bt">Bluetoothを使って運転中であることを自動検知</string>
+    <string name="drive_agent_trigger_bt">Bluetoothを使って運転中であることを自動検知します。</string>
     <string name="drive_agent_trigger_sms">SMSの自動返信を使って運転中であることを連絡します。</string>
     <string name="end_time">終了時間</string>
     <string name="feedback_rate">アプリを評価</string>
@@ -196,7 +197,9 @@
     <string name="layoutAlarmForwardText">分後</string>
     <string name="layoutPreferencesDebugClear">デバッグ・ログを消去</string>
     <string name="layoutPreferencesDebugView">デバッグ・ログを表示</string>
-    <string name="layoutPreferencesNotifications">通知の設定変更</string>
+    <!--rohans code...-->
+    <!--string name="layoutPreferencesNotifications">通知の設定変更</string-->
+    <string name="layoutPreferencesNotifications">各機能からの通知設定</string>
     <string name="layoutPreferencesNotificationsNone">通知しない</string>
     <string name="layoutPreferencesNotificationsOne">通知する</string>
     <string name="layoutPreferencesPreserveSettingsOnAgentUninstall">スマ執事の機能を無効にする</string>
@@ -208,11 +211,11 @@
     <string name="meeting_agent_calendar">カレンダーを参照して忙しい時間を特定します</string>
     <string name="meeting_agent_config_phone">一部の着信は受信します</string>
     <string name="meeting_agent_config_text">一部のメッセージは受信します</string>
-    <string name="meeting_agent_config_contacts">連絡を取ることができるWho can get through</string>
+    <string name="meeting_agent_config_contacts">許可する連絡先</string>
     <string name="meeting_agent_description">カレンダーの予定をチェックして取り込み中の時間帯を判断します。</string>
     <string name="meeting_agent_description_long">会議中には邪魔されないように端末をマナーモードにします。</string>
-    <string name="meeting_agent_description_first">スマ執事（会議）は、カレンダー上で会議として設定されている日時をチェックして、自動的に端末をマナーモードにします。</string>
-    <string name="meeting_agent_time_title">スマ執事（会議）は、以下の時間帯の会議のみを検出します。\"終日\"のイベントは無視されます。</string>
+    <string name="meeting_agent_description_first">スマ執事（会議中）は、カレンダー上で会議として設定されている日時をチェックして、自動的に端末をマナーモードにします。</string>
+    <string name="meeting_agent_time_title">スマ執事（会議中）は、以下の時間帯の会議のみを検出します。\"終日\"のイベントは無視されます。</string>
     <string name="meeting_agent_title">会議中</string>
     <string name="menu_chooser_mail">メールを送信</string>
     <string name="menu_contact">問い合わせ</string>
@@ -230,13 +233,13 @@
     <string name="parking_agent_map_guide">地図に表示するためには項目をクリックしてください</string>
     <string name="parking_agent_map_guide_no_pins">駐車場所は記録されていません。\n\n<b>参考:</b> 駐車場所は外部に送信されません。</string>
     <string name="parking_agent_title">駐車場</string>
-    <string name="parking_agent_trigger_activity">特定のスピードになると車が駐車したと判断します</string>
+    <string name="parking_agent_trigger_activity">特定のスピードになると車が駐車したと判断します。</string>
     <string name="parking_agent_trigger_bt">Bluetoothデバイスとの接続を解除すると、その場所が保存されます（オプション）。</string>
     <string name="parking_agent_trigger_pin">駐車場所はアプリ内の地図にピン止めされます。</string>
     <string name="parking_source_bt">位置情報（Bluetooth切断場所）</string>
     <string name="parking_source_ad">位置情報（停車の動作）</string>
     <string name="parking_source_manual">位置情報（手動で登録）</string>
-    <string name="parking_more">駐車場の可能性が低い場所は非表示にしています。すべて表示するにはここをクリックしてください</string>
+    <string name="parking_more">駐車場の可能性が低い場所は非表示にしています。すべて表示するにはここをタップしてください</string>
     <string name="service_name">端末モニター</string>
     <string name="status_from_server_service_name">サーバーからの監視ステータス</string>
     <string name="status_to_server_service_name">サーバーへの監視ステータス</string>
@@ -458,13 +461,13 @@
     <string name="location_chooser_clear_location">位置の設定を削除</string>
     <string name="location_lookup">位置情報解決</string>
     <string name="location_chooser">位置を選択</string>
-    <string name="location_unset">位置をクリック</string>
+    <string name="location_unset">位置をタップ</string>
     <string name="exclusion_respond_read">\"メッセージに自動返信\"と\"話して返信\"の両方のオプションを選択した状態にすると、意図せずに必要以上のメッセージへ返信してしまう可能性があります。</string>
     <string name="exclusion_respond_sms">\"メッセージに自動返信\"と\"話して返信\"の両方のオプションを選択した状態にすると、意図せずに必要以上のメッセージへ返信してしまう可能性があります。</string>
     <string name="exclusion_drive_agent_ad_bt">Bluetoothとモーション検知の両方が設定されている場合、スマ執事はモーション検知を無視します。</string>
     <string name="wifi_chooser_error">不明なエラー</string>
     <string name="yes_im_in">ログインしました</string>
-    <string name="onboarding_process">%2$s中の%1$s</string>
+    <string name="onboarding_process">%1$s/%2$s</string>
     <string name="skip">スキップ</string>
     <string name="finish">完了</string>
     <string name="onboarding_total_steps">2</string>
@@ -479,8 +482,8 @@
     <string name="choose_calendar">カレンダー</string>
     <string name="setup_car_bluetooth">車のBluetooth</string>
     <string name="onboarding_intro_title">利用を開始する</string>
-    <string name="onboarding_intro_intro">スマ執事は、状況に応じて（会議中、運転中、睡眠中、省電モード中など）お使いのデバイスを自動的に適切なモードに設定し、SMSメッセージや着信に自動返信します。</string>
-    <string name="onboarding_intro_header_2">スマ執事は以下を利用可能：</string>
+    <string name="onboarding_intro_intro">スマ執事は、状況に応じて（会議中、運転中、睡眠中、省電モード中など）お使いの端末を自動的に適切なモードに設定し、SMSメッセージや着信に自動返信します。</string>
+    <string name="onboarding_intro_header_2">スマ執事は以下を利用します：</string>
     <string name="your_cars_bluetooth">車のBluetooth</string>
     <string name="your_calendar">カレンダーおよび連絡先</string>
     <string name="onboarding_learn_more">詳細</string>
@@ -520,15 +523,21 @@
     <string name="label_no">いいえ</string>
 
     <string name="external_link_dialog_title">外部サイトへの接続</string>
-    <string name="external_link_dialog_message">App Pass外部サイトに接続します。大丈夫ですか？</string>
+
 
     <string name="notification_title">スマ執事を使うには権限の変更が必要です</string>
     <string name="notification_message">スマ執事がデバイスをマナーモードに切り替えたり、運転モードを自動実行させるようにするには、パーミッションを付与する必要があります。通知をタップするか、アプリ画面からパーミッションを設定してください。</string>
     <string name="notification_confirmation_title">通知設定について</string>
-    <string name="notification_confirmation_message">新しい機能の更新などについてお知らせします</string>
     <string name="yes_recommended">はい（推奨）</string>
     <string name="set_later">後で設定する</string>
-    <string name="do_not_display">もう一度表示しない</string>
     <string name="config_silence_phone">無音モードで通知する</string>
     <string name="aboutTitle_agent">スマ執事</string>
+
+    <!-- added after 6/12-->
+    <string name="pushNotificaitonSetting">アプリ通知設定</string>
+    <string name="external_link_dialog_message">App Pass外サイトへ接続します。よろしいですか？</string>
+    <string name="notification_confirmation_message">新機能アップデート等の案内をさせていただきます。</string>
+    <string name="do_not_display">今後表示しない</string>
+    <string name="parking_map_notification">場所が更新されている間、数秒間待ってください。</string>
+
 </resources>
